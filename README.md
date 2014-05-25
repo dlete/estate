@@ -16,6 +16,8 @@ https://guides.github.com/features/mastering-markdown/#GitHub-flavored-markdown
 - version 2.7
 
 ###### SQL
+- connector info: https://docs.djangoproject.com/en/dev/ref/databases/#mysql-db-api-drivers
+- connector installed: pip install MySQL-python
 - MySQL 5.6
 - sudo mysql_secure_installation 
 -   CREATE DATABASE <db_name> CHARACTER SET utf8;
