@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>{% block title %}La Casa de la Bomba{% endblock %}</title>
+    </head>
+
+    <body>
+        <div>
+            <!-- Page specific content goes here -->
+            {% block body_block %}{% endblock %}
+        </div>
+
+        <hr />
+
+        <div>
+            <ul>
+                <li><a href="{% url 'discoveries:aa' %}">Aa</a></li>
+                <li><a href="{% url 'discoveries:ab' %}">Ab</a></li>
+                <li><a href="{% url 'discoveries:index' %}">Index</a></li>
+                <li><a href="{% url 'discoveries:reports' %}">Reports</a></li>
+                <li><a href="{% url 'discoveries:scan' %}">Scan</a></li>
+            </ul>
+        </div>
+    </body>
+</html>

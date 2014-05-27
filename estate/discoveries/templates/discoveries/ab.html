@@ -1,0 +1,12 @@
+{% extends 'discoveries/base.html' %}
+
+{% block title %}{{ titlemessage }}{% endblock %}
+
+{% block body_block %}
+    <p>{{ bodymessage }}</p>
+
+    <p>{{ pieza.part_number }}</p>
+    <p>{{ pieza.serial_number }}</p>
+
+    <p>{{ vehiculo }}</p>
+{% endblock %}

@@ -1,7 +1,13 @@
-<p>This is the REPORTS page of the discoveries app</p>
+{% extends 'discoveries/base.html' %}
+
+{% block title %}REPORTS{% endblock %}
+
+{% block body_block %}
+<p>{{ boldmessage }}</p>
 
 {% if number_of_parts_discovered %}
     <p>The number of parts in the PartDiscovered table is: {{ number_of_parts_discovered }}</p>
 {% else %}
     <p>There are no parts in the PartDiscovered table</p>
 {% endif %}
+{% endblock %}
