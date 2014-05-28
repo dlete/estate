@@ -10,4 +10,5 @@ urlpatterns = patterns('',
 
     url(r'^admin/', include(admin.site.urls)),
     url(r'^discoveries/', include('discoveries.urls', namespace="discoveries")),
+    url(r'^scout/', include('scout.urls', namespace="scout")),
 )

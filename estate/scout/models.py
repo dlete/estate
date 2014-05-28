@@ -2,6 +2,29 @@ from django.db import models
 
 # Create your models here.
 
+# should have a field for 
+# - the user/company/admin entity owner of the discovery
+# - date it was created
+# - date it was modified
+class Discovery(models.Model):
+    name = models.CharField(max_length=200)
+
+    def __unicode__(self):
+        return self.name
+
+# liaison table between Discovery and IpNetwork tables so that 
+# one Discovery can have more than one IpNetwork associated to it
+class DiscoveryToIpNetwork(models.Model):
+    discovery = models.ForeignKey('Discovery')
+    ip_network = models.ForeignKey('IpNetwork')
+
+    def __unicode__(self):
+        # if we return self.discovery, we get the error 
+        # 'ip_network' object has no attribute '__getitem__'
+        # have to specify to return self.discovery.name
+        return self.discovery.name
+
+
 # will store IP addresses as text and rely in Python instead of the database
 # to handle IP networks/addresses. Intend to use the "netaddr" package for
 # Python 2.x and the "ipaddress" module if Python3. If use the database for
@@ -23,9 +46,9 @@ class IpNetworkToSnmpCommunity(models.Model):
     snmp_community = models.ForeignKey('SnmpCommunity')
 
     def __unicode__(self):
-        # if we return self.ip_network only, we get the error 
+        # if we return self.ip_network, we get the error 
         # 'ip_network' object has no attribute '__getitem__'
-        # have to specify to return the ip_network.name
+        # have to specify to return self.ip_network.name
         return self.ip_network.name
 
 
