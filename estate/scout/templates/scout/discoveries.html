@@ -10,7 +10,7 @@
         {% csrf_token %}
 
         {% for d in all_discoveries %}
-            <input type="checkbox" name="chosen_d" value="d.id">{{ d.name }}<br />
+            <input type="checkbox" name="chosen_d" value="d.id"><a href="/scout/discoveries/{{ d.id }}/">{{ d.name }}</a><br />
         {% endfor %}
 
         <input type="submit" value="Do nothing for the moment" />

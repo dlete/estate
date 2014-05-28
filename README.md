@@ -14,6 +14,7 @@ https://guides.github.com/features/mastering-markdown/#GitHub-flavored-markdown
 
 ###### Python
 - version 2.7
+- conventions in https://www.python.org/dev/peps/pep-0008
 
 ###### SQL
 - connector info: https://docs.djangoproject.com/en/dev/ref/databases/#mysql-db-api-drivers
