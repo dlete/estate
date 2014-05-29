@@ -8,13 +8,26 @@
     <p>{{ bodymessage }}</p>
 
     {% for n in networks %}
-        <p>{{ n }}</p>
+        <p>{{ n.network }}</p>
     {% endfor %}
 
-    {% for ipc in ip_collections %}
-        {% for ip in ipc %}
-            <p>{{ ip }}</p>
+
+    {% for dic in list_of_dictionaries %}
+        <p>{{ dic }}</p>
+        <p>{{ dic.network }}</p>
+        <p>{{ dic.communities }}</p>
+        {% for community in dic.communities %}
+            <p>{{ community }}</p>
         {% endfor %}
     {% endfor %}
+
+
+    {% if ip_collections %}
+        {% for ipc in ip_collections %}
+            {% for ip in ipc %}
+                <p>{{ ip }}</p>
+            {% endfor %}
+        {% endfor %}
+    {% endif %}
 
 {% endblock %}

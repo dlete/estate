@@ -28,27 +28,72 @@ def scan(request, discovery_id):
     context['titlemessage'] = "SCAN DISC"
 
     discovery = get_object_or_404(Discovery, pk=discovery_id)
-
-    # this should be a list with entries being a couple discovery <-> network
-    discovery_to_ipnetworks = discovery.discoverytoipnetwork_set.all()
-    networks = []
-    for di in discovery_to_ipnetworks:
-        n = di.ip_network
-        networks.append(n.network)
-    context['networks'] = networks
-
-    ip_collections = []
-    for n in networks:
-#        n = IPNetwork(n)
-        # list
-        ip_collection = explode_network(n)
-
-        # append list to another list
-        ip_collections.append(ip_collection)
-    context['ip_collections'] = ip_collections
-         
-
     context['discovery'] = discovery
+
+
+    # Get the networks associated with this discovery
+    # list with entries being a pair discovery <-> network
+    discovery_to_ipnetworks = discovery.discoverytoipnetwork_set.all()
+
+    # will put the networks associated with this discovery in a list
+    ip_networks = []
+    for di in discovery_to_ipnetworks:
+        ip_network = di.ip_network
+        ip_networks.append(ip_network)
+    # make the list of networks available to the template
+    context['networks'] = ip_networks
+
+    '''
+    # get the snmp communities associated to each network
+    lol = []
+    for n in ip_networks:
+    # n is an IpNetwork object
+        ls = []
+        n2ss = n.ipnetworktosnmpcommunity_set.all()
+        for n2s in n2ss:
+            # s is a SnmpCommunity object
+            s = n2s.snmp_community.name
+            ls.append(s)
+        lol.append([n.network, ls])
+    context['lol'] = lol
+    ''' 
+    ############################################################################ 
+    # get the snmp communities associated to each network
+    # this is the list that we will pass to the template
+    # each entry will be a dictionary.
+    # the first value will be the network
+    # the second value will be a list of communities
+    list_of_dictionaries = []
+
+    # ip_network is an IpNetwork object
+    for ip_network in ip_networks:
+
+        # each entry of the output will be a dictionary
+        # will populate this dictionary with network and communities values
+        dictionary_network_to_community = {}
+
+        # communities will go into a list
+        communities = []
+
+        # get the communities <-> network pairs for this network
+        network_to_communities = ip_network.ipnetworktosnmpcommunity_set.all()
+        for network_to_community in network_to_communities:
+            # extract the community name
+            community = network_to_community.snmp_community.name
+            # add to the list
+            communities.append(community)
+
+        # pack things into the dictionary
+        dictionary_network_to_community["network"] = ip_network.network
+        dictionary_network_to_community["communities"] = communities
+
+        # pack the dictionaries into a list
+        list_of_dictionaries.append(dictionary_network_to_community)
+
+    # make the list available to the template
+    context['list_of_dictionaries'] = list_of_dictionaries
+    ############################################################################
+
     return render(request, 'discoveries/scan.html', context)
 
 
