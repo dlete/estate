@@ -22,5 +22,5 @@ def add_ip_network(name, network):
 if __name__ == '__main__':
     print "Starting to populate IP Networks..."
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'estate.settings')
-    from scout.models import IpNetwork
+    from discoveries.models import IpNetwork
     populate()

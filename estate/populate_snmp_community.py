@@ -22,5 +22,5 @@ def add_snmp_community(name, version):
 if __name__ == '__main__':
     print "Starting to populate SNMP Communities..."
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'estate.settings')
-    from scout.models import SnmpCommunity
+    from discoveries.models import SnmpCommunity
     populate()

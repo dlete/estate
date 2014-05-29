@@ -1,0 +1,17 @@
+{% extends 'discoveries/base.html' %}
+
+{% block body_block %}
+
+    <p>{{ bodymessage }}</p><br>
+    {{ discovery.name }}
+
+    {% for discovery_to_ipnetwork in discovery_to_ipnetworks %}
+        <p>{{ discovery_to_ipnetwork.ip_network.network }}</p>
+    {% endfor %}
+
+    <a href="/discoveries/{{ discovery.id }}/scan/">Start scanning!!</a>
+
+{% endblock %}
+
+
+

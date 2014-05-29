@@ -20,5 +20,5 @@ def add_discovery(name):
 if __name__ == '__main__':
     print "Starting to populate the Discovery table..."
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'estate.settings')
-    from scout.models import Discovery
+    from discoveries.models import Discovery
     populate()

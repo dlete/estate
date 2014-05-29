@@ -1,7 +1,20 @@
 {% extends 'discoveries/base.html' %}
 
-{% block title %}INDEX{% endblock %}
+{% block title %}INDEX DISC{% endblock %}
 
 {% block body_block %}
-<p>{{ boldmessage }}</p>
+
+    <p>{{ bodymessage }}</p>
+
+    <form action="{% url 'discoveries:index' %}" method="post">
+        {% csrf_token %}
+
+        {% for d in all_discoveries %}
+            <input type="checkbox" name="chosen_d" value="d.id"><a href="/discoveries/{{ d.id }}/">{{ d.name }}</a><br />
+        {% endfor %}
+
+        <input type="submit" value="Do nothing for the moment" />
+    </form>
+
+
 {% endblock %}

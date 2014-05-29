@@ -1,9 +1,20 @@
 {% extends 'discoveries/base.html' %}
 
-{% block title %}SCAN{% endblock %}
+{% block title %}{{ titlemessage }}{% endblock %}
+
 
 {% block body_block %}
 
-    <p>{{ boldmessage }}</p>
+    <p>{{ bodymessage }}</p>
+
+    {% for n in networks %}
+        <p>{{ n }}</p>
+    {% endfor %}
+
+    {% for ipc in ip_collections %}
+        {% for ip in ipc %}
+            <p>{{ ip }}</p>
+        {% endfor %}
+    {% endfor %}
 
 {% endblock %}

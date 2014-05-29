@@ -12,7 +12,10 @@ def discoveries(request):
     return render(request, 'scout/discoveries.html', context)
 
 def disc_detail(request, disc_id):
-    return HttpResponse("You're looking at discovery %s." % disc_id)
+#    return HttpResponse("You're looking at discovery %s." % disc_id)
+    context = {'bodymessage': "You are looking at Discovery detail: "}
+    context['titlemessage'] = "DISCOVERY DETAIL"
+    return render(request, 'scout/discoveries/', {'disc_id': disc_id})
 
 def index(request):
     context = {'boldmessage': "This is the INDEX page of the scout app"}
