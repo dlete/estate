@@ -23,6 +23,10 @@ def detail(request, discovery_id):
     return render(request, 'discoveries/detail.html', context)    
 
 
+def reconcile(request):
+    context = {'bodymessage': "Reconcile view. Maybe include a form/checkboxes"}
+    return render(request, 'discoveries/reconcile.html', context)
+
 def scan(request, discovery_id):
     context = {'bodymessage': "This is the SCAN page of the discoveries app"}
     context['titlemessage'] = "SCAN DISC"

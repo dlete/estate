@@ -10,7 +10,7 @@ class PartDiscovered (models.Model):
     hostname = models.CharField(max_length=200, null=True)
     part_number = models.CharField(max_length=200, null=True)
     serial_number = models.CharField(max_length=200)
-    type = models.PositiveSmallIntegerField(null=True)
+    part_type = models.PositiveSmallIntegerField(null=True)
     is_fru = models.NullBooleanField()
     date_discovered = models.DateTimeField('date discovered', null=True)
 
