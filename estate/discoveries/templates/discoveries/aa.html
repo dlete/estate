@@ -8,13 +8,18 @@
     <form action="{% url 'discoveries:ab' %}" method="post">
         {% csrf_token %}
 
+            <input type="checkbox" name="vehicle" value="Bike">I have a bike<br />
+            <input type="checkbox" name="vehicle" value="Car">I have a car<br />
+
+        {% for part in parts_discovered %}
+            <input type="checkbox" name"discos" value={{ part.id }}>{{ part.serial_number }}<br>
+        {% endfor %}
+
         {% for part in parts_discovered %}
             <input type="radio" name="choice" id="choice{{ forloop.counter }}" value="{{ part.id }}" />
             <label for="choice{{ forloop.counter }}">{{ part.serial_number }}</label><br />
         {% endfor %}
 
-            <input type="checkbox" name="vehicle" value="Bike">I have a bike<br />
-            <input type="checkbox" name="vehicle" value="Car">I have a car<br />
 
         <input type="submit" value="Go and scan, go get them!" />
     </form>

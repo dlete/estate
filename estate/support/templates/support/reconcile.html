@@ -6,5 +6,57 @@
     <p>There are {{ number_of_parts_discovered }} items in the PartDiscovered table</p>
     <p>There are {{ number_of_parts_supported }} items in the PartSupported table</p>
 
+    <hr />
+    <p>Parts only in Discovered</p>
+
+    <form action="{% url 'support:reconcile' %}" method="post">
+        {% csrf_token %}
+    <table>
+
+        <tr>
+            <td>Select</td>
+            <td>Hostname</td>
+            <td>Serial number</td>
+            <td>Part number</td>
+            <td>Part type</td>
+            <td>Date discovered</td>
+            <td>Action</td>
+        </tr>
+
+        {% for part in parts_only_in_discovered %}
+        <tr>
+            <td><input type="checkbox" name="chosen_part" value={{ part.id }}></td>
+            <td>{{ part.hostname }}</td>
+            <td>{{ part.serial_number }}</td>
+            <td>{{ part.part_number }}</td>
+            <td>{{ part.part_type }}</td>
+            <td>{{ part.date_discovered }}</td>
+            <td><a href="/support/reconcile/add_to_support/{{ part.id }}/">Add to support list</a></td>
+        </tr>
+        {% endfor %}
+
+    </table>
+    <input type="submit" value="Do nothing for the moment" />
+    </form>
+
+
+    <hr />
+    <p>Parts only in Supported</p>
+    <table>
+        <tr>
+            <td>Hostname</td>
+            <td>Serial number</td>
+            <td>Part number</td>
+        </tr>
+
+        {% for part in parts_only_in_supported %}
+        <tr>
+            <td>{{ part.hostname }}</td>
+            <td>{{ part.serial_number }}</td>
+            <td>{{ part.part_number }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+
 
 {% endblock %}

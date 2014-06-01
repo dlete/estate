@@ -110,6 +110,23 @@ def ab(request):
     context = {'bodymessage': "AB page of the discoveries app"}
     context['titlemessage'] = "AB"
 
+    if request.POST['vehicle']:
+        v = request.POST.getlist('vehicle')
+        context['vehiculo'] = v
+#        context['vehiculo'] = "lleno"
+    else:
+        context['vehiculo'] = "vacio"
+
+# http://www.djangofoo.com/93/request-post-get-multiple-values
+# http://stackoverflow.com/questions/15393134/django-how-can-i-create-a-multiple-select-form
+    if request.POST['discos']:
+        dp = request.POST.getlist('discos')
+        context['discos'] = dp
+    else:
+        context['discos'] = "vacio"
+
+
+
     if request.POST['choice']:
         c = request.POST['choice']
         pieza = PartDiscovered.objects.get(pk=c)
@@ -117,11 +134,6 @@ def ab(request):
     else:
         context['pieza'] = "vacio"
 
-    if request.POST['vehicle']:
-        v = request.POST.getlist('vehicle')
-        context['vehiculo'] = v
-    else:
-        context['vehiculo'] = "vacio"
 
     return render(request, 'discoveries/ab.html', context)
 

@@ -5,8 +5,27 @@
 {% block body_block %}
     <p>{{ bodymessage }}</p>
 
+{% if vehiculo %}
+    {% for v in vehiculo %}
+        <p>{{ vehiculo }}</p>
+    {% endfor %}
+{% endif %}
+
+
+{% if pieza %}
     <p>{{ pieza.part_number }}</p>
     <p>{{ pieza.serial_number }}</p>
+{% endif %}
 
-    <p>{{ vehiculo }}</p>
+
+{% if discos %}
+    {% for disco in discos %}
+        <p>hola</p>
+        {% comment %}
+        <p>{{ part }}</p>
+        {% endcomment %}
+    {% endfor %}
+{% endif %}
+
+
 {% endblock %}
