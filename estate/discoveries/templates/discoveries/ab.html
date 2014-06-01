@@ -7,25 +7,31 @@
 
 {% if vehiculo %}
     {% for v in vehiculo %}
-        <p>{{ vehiculo }}</p>
+        <p>{{ v }}</p>
     {% endfor %}
 {% endif %}
 
+{% if frutas %}
+    {% for fruta in frutas %}
+        <p>{{ fruta }}</p>
+    {% endfor %}
+{% endif %}
 
+{% comment %}
 {% if pieza %}
-    <p>{{ pieza.part_number }}</p>
     <p>{{ pieza.serial_number }}</p>
 {% endif %}
-
+{% endcomment %}
 
 {% if discos %}
+{{ discos }}<br>
+{% endif %}
+{% comment %}
+{% if discos %}
     {% for disco in discos %}
-        <p>hola</p>
-        {% comment %}
-        <p>{{ part }}</p>
-        {% endcomment %}
+        <p>{{ disco.id }}</p>
     {% endfor %}
 {% endif %}
-
+{% endcomment %}
 
 {% endblock %}

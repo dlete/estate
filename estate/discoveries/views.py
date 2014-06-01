@@ -103,6 +103,10 @@ def aa(request):
 
     parts_discovered = PartDiscovered.objects.all()
     context['parts_discovered'] = parts_discovered
+
+    fruits = ['apple', 'cherry', 'pear']
+    context['fruits'] = fruits
+
     return render(request, 'discoveries/aa.html', context)
 
 
@@ -113,26 +117,30 @@ def ab(request):
     if request.POST['vehicle']:
         v = request.POST.getlist('vehicle')
         context['vehiculo'] = v
-#        context['vehiculo'] = "lleno"
     else:
         context['vehiculo'] = "vacio"
+
+    if request.POST['frutas']:
+        f = request.POST.getlist('frutas')
+        context['frutas'] = f
+    else:
+        context['frutas'] = "no fruits chosen"
 
 # http://www.djangofoo.com/93/request-post-get-multiple-values
 # http://stackoverflow.com/questions/15393134/django-how-can-i-create-a-multiple-select-form
     if request.POST['discos']:
-        dp = request.POST.getlist('discos')
+        #dp = request.POST.getlist('discos')
+        dp = ['Carlos', 'Pepe']
         context['discos'] = dp
     else:
-        context['discos'] = "vacio"
+        context['discos'] = "no disco chosen"
 
-
-
-    if request.POST['choice']:
-        c = request.POST['choice']
-        pieza = PartDiscovered.objects.get(pk=c)
-        context['pieza'] = pieza
-    else:
-        context['pieza'] = "vacio"
+#    if request.POST['choice']:
+#        c = request.POST['choice']
+#        pieza = PartDiscovered.objects.get(pk=c)
+#        context['pieza'] = pieza
+#    else:
+#        context['pieza'] = "vacio"
 
 
     return render(request, 'discoveries/ab.html', context)
