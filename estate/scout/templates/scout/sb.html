@@ -1,0 +1,15 @@
+{% extends 'discoveries/base.html' %}
+
+
+{% block body_block %}
+
+    <p>{{ bodymessage }}</p>
+
+    {{ selected_choices }}
+
+    {% for c in selected_choices %}
+        {{ c }}
+    {% endfor %}
+
+{% endblock %}
+

@@ -15,10 +15,11 @@
             <input type="checkbox" name="frutas" value="{{ fruit }}">{{ forloop.counter }}<br>
         {% endfor %}
 
+{% comment %}
         {% for part in parts_discovered %}
             <input type="checkbox" name"discos" value="{{ forloop.counter }}">{{ part.serial_number }}<br>
         {% endfor %}
-
+{% endcomment %}
 
 {% comment %}
         {% for part in parts_discovered %}

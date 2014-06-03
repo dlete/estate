@@ -101,8 +101,8 @@ def aa(request):
     context = {'bodymessage': "AA page of the discoveries app"}
     context['titlemessage'] = "AA"
 
-    parts_discovered = PartDiscovered.objects.all()
-    context['parts_discovered'] = parts_discovered
+#    parts_discovered = PartDiscovered.objects.all()
+#    context['parts_discovered'] = parts_discovered
 
     fruits = ['apple', 'cherry', 'pear']
     context['fruits'] = fruits
@@ -128,12 +128,12 @@ def ab(request):
 
 # http://www.djangofoo.com/93/request-post-get-multiple-values
 # http://stackoverflow.com/questions/15393134/django-how-can-i-create-a-multiple-select-form
-    if request.POST['discos']:
-        #dp = request.POST.getlist('discos')
-        dp = ['Carlos', 'Pepe']
-        context['discos'] = dp
-    else:
-        context['discos'] = "no disco chosen"
+#    if request.POST['discos']:
+#        #dp = request.POST.getlist('discos')
+#        dp = ['Carlos', 'Pepe']
+#        context['discos'] = dp
+#    else:
+#        context['discos'] = "no disco chosen"
 
 #    if request.POST['choice']:
 #        c = request.POST['choice']

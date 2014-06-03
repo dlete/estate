@@ -1,0 +1,23 @@
+{% extends 'discoveries/base.html' %}
+
+{% block body_block %}
+
+    <p>{{ bodymessage }}</p>
+
+    {{ fruits }}<br>
+    {{ parts }}<br>
+
+    {% if fruits %}
+        {% for fruit in fruits %}
+            <p>{{ fruit }}</p>
+        {% endfor %}
+    {% endif %}
+
+    {% if parts %}
+        {% for part in parts %}
+            <p>{{ part }}</p>
+        {% endfor %}
+    {% endif %}
+
+{% endblock %}
+
