@@ -23,6 +23,7 @@ def aa(request):
     context['fruits'] = fruits
 
     parts = PartDiscovered.objects.all()[0:4]
+#    parts = [[p.id, p.serial_number] for p in PartDiscovered.objects.all()[0:4]]
     context['parts'] = parts
 
     return render(request, 'scout/aa.html', context)
