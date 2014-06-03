@@ -13,7 +13,9 @@ import os
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
 # dlete, start
+
 TEMPLATE_DIRS = [os.path.join(BASE_DIR, 'templates')]
+
 # dlete, end
 
 # Quick-start development settings - unsuitable for production

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>{% block title %}La Casa de la Bomba{% endblock title %}</title>
+    </head>
+
+    <body>
+        <div>
+            <!-- Page specific content goes here -->
+            {% block content %}{% endblock content %}
+        </div>
+
+        <hr />
+
+        <div>
+            <ul>
+                <li><a href="{% url 'scout:aa' %}">Aa scout</a></li>
+                <li><a href="{% url 'scout:ab' %}">Ab scout</a></li>
+                <li><a href="{% url 'discoveries:aa' %}">Aa discoveries</a></li>
+                <li><a href="{% url 'discoveries:index' %}">Index</a></li>
+                <li><a href="{% url 'support:reconcile' %}">Reconcile</a></li>
+                <li><a href="{% url 'support:add_to_support_many' %}">Reconcile, add many</a></li>
+                <li><a href="{% url 'discoveries:reports' %}">Reports</a></li>
+                <li><a href="{% url 'scout:sa' %}">Sa scout</a></li>
+                <li><a href="{% url 'scout:sb' %}">Sb scout</a></li>
+            </ul>
+        </div>
+    </body>
+</html>

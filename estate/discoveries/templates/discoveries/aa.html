@@ -1,8 +1,8 @@
-{% extends 'discoveries/base.html' %}
+{% extends 'base.html' %}
 
-{% block title %}{{ titlemessage }}{% endblock %}
+{% block title %}{{ titlemessage }}{% endblock title%}
 
-{% block body_block %}
+{% block content %}
     <p>{{ bodymessage }}</p>
 
     <form action="{% url 'discoveries:ab' %}" method="post">
@@ -31,4 +31,4 @@
         <input type="submit" value="Go and scan, go get them!" />
     </form>
 
-{% endblock %}
+{% endblock content %}

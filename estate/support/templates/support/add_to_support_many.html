@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <p>{{ bodymessage }}</p>
+
+    {{ chosen_parts }}<br>
+
+    {% if parts_to_add %}
+        {% for part in parts_to_add %}
+            <p>{{ part.serial_number }} {{ part.part_number }}</p>
+        {% endfor %}
+    {% endif %}
+
+{% endblock content %}
+
