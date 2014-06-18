@@ -28,3 +28,6 @@ https://guides.github.com/features/mastering-markdown/#GitHub-flavored-markdown
 
 ###### virtualenv
 mkvirtualenv -p /usr/bin/python3 <environment>
+
+###### Deploy
+- http://michal.karzynski.pl/blog/2013/06/09/django-nginx-gunicorn-virtualenv-supervisor/

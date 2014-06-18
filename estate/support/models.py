@@ -22,6 +22,7 @@ class PartSupported (models.Model):
     date_added = models.DateTimeField('date added', null=True)
     date_modified = models.DateTimeField('date modified', null=True)
     date_removed = models.DateTimeField('date removed', null=True)
+# add date_last_discovered = models.DateTimeField('date last discovered', null=True)
 
     def __unicode__(self):
         return self.serial_number

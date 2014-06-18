@@ -1,2 +1,7 @@
 - model SnmpCommunity appears as "Snmp Communitys" in the admin page
   change to "SNMP Community"
+
+- supported, edit multiple
+- supported, edit inline
+- supported, order columns
+- supported, filter/search
