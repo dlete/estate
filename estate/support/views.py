@@ -10,7 +10,12 @@ from django.core.urlresolvers import reverse
 # Create your views here.
 def index(request):
     context = {'bodymessage': "Index view in Support. Maybe include a form/checkboxes"}
+
+    parts_supported = PartSupported.objects.all()
+    context['parts_supported'] = parts_supported
+
     return render(request, 'support/index.html', context)
+
 
 def add_to_support(request, part_id):
     add_discovered_part_to_support(part_id)

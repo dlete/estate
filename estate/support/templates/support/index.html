@@ -4,4 +4,30 @@
 
     <p>{{ bodymessage }}</p>
 
+    <hr />
+    <p>Parts Supported</p>
+
+    <form action="{% url 'support:index' %}" method="post">
+    {% csrf_token %}
+    <table>
+        <tr>
+            <td>Select</td>
+            <td>Hostname</td>
+            <td>Serial number</td>
+            <td>Part number</td>
+        </tr>
+
+        {% for part in parts_supported %}
+        <tr>
+            <td><input type="checkbox" name="chosen_parts" value={{ part.id }}></td>
+            <td>{{ part.hostname }}</td>
+            <td>{{ part.serial_number }}</td>
+            <td>{{ part.part_number }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <input type="submit" value="Do nothing for the moment, Edit many" />
+    </form>
+
+
 {% endblock content %}
