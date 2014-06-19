@@ -5,9 +5,24 @@ from django.shortcuts import get_object_or_404
 from django.utils import timezone
 from django.http import HttpResponseRedirect, HttpResponse
 from django.core.urlresolvers import reverse
+from support.forms import EditPartSupportedForm
 
 
 # Create your views here.
+def edit_part_supported(request):
+    if request.method == 'POST': # If the form has been submitted...
+        form = EditPartSupportedForm(request.POST) 
+        if form.is_valid():
+            # Process the data in form.cleaned_data
+            # ...
+            return HttpResponseRedirect('support:index') # Redirect after POST
+    else:
+        form = EditPartSupportedForm() # An unbound form
+
+    return render(request, 'support/edit_part_supported.html', {
+        'form': form,
+    })
+
 def index(request):
     context = {'bodymessage': "Index view in Support. Maybe include a form/checkboxes"}
 
