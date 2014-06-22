@@ -9,19 +9,28 @@ from support.forms import EditPartSupportedForm
 
 
 # Create your views here.
-def edit_part_supported(request):
-    if request.method == 'POST': # If the form has been submitted...
-        form = EditPartSupportedForm(request.POST) 
-        if form.is_valid():
-            # Process the data in form.cleaned_data
-            # ...
-            return HttpResponseRedirect('support:index') # Redirect after POST
-    else:
-        form = EditPartSupportedForm() # An unbound form
+def edit_many_part_supported(request):
+    if request.method == 'POST':
+        context = {'bodymessage': "edit_many_part_supported in Support."}
+        parts_to_edit = request.POST.getlist('chosen_parts')
+        
+        context['parts_to_edit'] = parts_to_edit
 
-    return render(request, 'support/edit_part_supported.html', {
-        'form': form,
-    })
+        return render(request, 'support/edit_many_part_supported.html', context)
+
+
+def update_many_part_supported(request):
+#    context = {'bodymessage': "update_many_part_supported in Support."}
+#    return render(request, 'support/update_many_part_supported.html', context)
+
+    if request.method == 'POST':
+        context = {'bodymessage': "update_many_part_supported in Support."}
+        parts_to_update = request.POST.getlist('chosen_parts')
+
+        context['parts_to_update'] = parts_to_update
+
+        return render(request, 'support/update_many_part_supported.html', context)
+
 
 def index(request):
     context = {'bodymessage': "Index view in Support. Maybe include a form/checkboxes"}

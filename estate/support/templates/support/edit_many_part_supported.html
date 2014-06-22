@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <p>{{ bodymessage }}</p>
+
+    <p>{{ parts_to_edit }}</p>
+
+    <form action="{% url 'support:update_many_part_supported' %}" method="post">
+    {% csrf_token %}
+    {% for part in parts_to_edit %}
+        <input type="hidden" name="chosen_parts" value="{{ parts_to_edit }}">
+    {% endfor %}
+    <input type="submit" value="Take me to Update Many">
+    </form>
+
+
+{% endblock content %}

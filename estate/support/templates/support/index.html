@@ -7,8 +7,9 @@
     <hr />
     <p>Parts Supported</p>
 
-    <form action="{% url 'support:index' %}" method="post">
+    <form action="{% url 'support:edit_many_part_supported' %}" method="post">
     {% csrf_token %}
+
     <table>
         <tr>
             <td>Select</td>
@@ -17,16 +18,18 @@
             <td>Part number</td>
         </tr>
 
+
         {% for part in parts_supported %}
         <tr>
-            <td><input type="checkbox" name="chosen_parts" value={{ part.id }}></td>
+            <td><input type="checkbox" name="chosen_parts" value="{{ part.id }}"></td>
             <td>{{ part.hostname }}</td>
             <td>{{ part.serial_number }}</td>
             <td>{{ part.part_number }}</td>
         </tr>
         {% endfor %}
+
     </table>
-    <input type="submit" value="Do nothing for the moment, Edit many" />
+    <input type="submit" value="Take me to Edit Many">
     </form>
 
 
