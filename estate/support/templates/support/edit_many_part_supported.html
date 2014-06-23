@@ -8,9 +8,18 @@
 
     <form action="{% url 'support:update_many_part_supported' %}" method="post">
     {% csrf_token %}
+
     {% for part in parts_to_edit %}
-        <input type="hidden" name="chosen_parts" value="{{ parts_to_edit }}">
+        <input type="hidden" name="hidden_chosen_parts" value="{{ parts_to_edit }}">
+
+        <!-- http://www.sitepoint.com/forums/showthread.php?401160-Make-a-checkbox-checked-by-default-and-invisible -->
+        <input type="checkbox" name="chosen_parts" value="{{ part }}" checked="true" style="visibility:hidden">
     {% endfor %}
+    <br>
+
+    Hostname: <input type="text" name="hostname"><br>
+    Part Number: <input type="text" name="part_number"><br>
+
     <input type="submit" value="Take me to Update Many">
     </form>
 

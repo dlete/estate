@@ -2,18 +2,21 @@ from django.shortcuts import render
 
 from scout.models import Discovery
 from scout.forms import SaForm
+from scout.forms import f2editForm
 from discoveries.models import PartDiscovered
 import logging
+
+def f2edit(request):
+    supported_parts = PartDiscovered.objects.all()[0:3]
+    form = f2editForm(initial={'interests.queryset': supported_parts})
+    return render(request, 'scout/f2edit.html', {'form': form})    
+
 
 def aa(request):
     context = {'bodymessage': "AA page of the Scout app"}
     context['titlemessage'] = "AA Scout"
 
-#    fruits = ['apple', 'cherry', 'pear']
-#    context['fruits'] = fruits
-
     parts = PartDiscovered.objects.all()[0:4]
-#    parts = [[p.id, p.serial_number] for p in PartDiscovered.objects.all()[0:4]]
     context['parts'] = parts
 
     return render(request, 'scout/aa.html', context)
@@ -23,11 +26,7 @@ def ab(request):
     if request.method == 'POST':
         context = {'bodymessage': "AB page of the Scout app"}
 
-#        fruits = request.POST.getlist('fruits')
-#        context['fruits'] = fruits
-
         parts = request.POST.getlist('parts')
-#        parts = request.POST.lists()
         context['parts'] = parts
 
         return render(request, 'scout/ab.html', context)

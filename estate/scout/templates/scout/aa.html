@@ -10,12 +10,6 @@
     <form action="{% url 'scout:ab' %}" method="post">
         {% csrf_token %}
         
-        {% comment %}
-        {% for fruit in fruits %}
-             <input type="checkbox" name="fruits" value="{{ fruit }}">{{ forloop.counter }}<br>
-        {% endfor %}
-        {% endcomment %}
-
         {% for part in parts %}
             <input type="checkbox" name="parts" value="{{ part.serial_number }}">{{ part.serial_number }}<br>
         {% endfor %}

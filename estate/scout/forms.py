@@ -1,6 +1,13 @@
 from django import forms
 from discoveries.models import PartDiscovered
-         
+
+class f2editForm(forms.Form):
+    hostname = forms.CharField(max_length=100)
+
+    supported_parts = PartDiscovered.objects.all()[0:6]
+    interests = forms.ModelMultipleChoiceField(widget=forms.CheckboxSelectMultiple, queryset=supported_parts)
+#    interests = forms.ModelMultipleChoiceField(widget=forms.CheckboxSelectMultiple, queryset=None)
+             
 class SaForm(forms.Form):
     LIST_INTERESTS = PartDiscovered.objects.all()
 

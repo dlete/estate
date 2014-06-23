@@ -8,30 +8,46 @@ from django.core.urlresolvers import reverse
 from support.forms import EditPartSupportedForm
 
 
-# Create your views here.
+# KEEP
 def edit_many_part_supported(request):
     if request.method == 'POST':
         context = {'bodymessage': "edit_many_part_supported in Support."}
         parts_to_edit = request.POST.getlist('chosen_parts')
-        
         context['parts_to_edit'] = parts_to_edit
-
         return render(request, 'support/edit_many_part_supported.html', context)
 
-
+# KEEP
 def update_many_part_supported(request):
-#    context = {'bodymessage': "update_many_part_supported in Support."}
-#    return render(request, 'support/update_many_part_supported.html', context)
-
     if request.method == 'POST':
-        context = {'bodymessage': "update_many_part_supported in Support."}
-        parts_to_update = request.POST.getlist('chosen_parts')
+        # the form does give us a list of integers (like [u'193', u'194']) that are the
+        # id of the objects selected
+        part_ids_to_update = request.POST.getlist('chosen_parts')
 
-        context['parts_to_update'] = parts_to_update
+        # From the ids we get the objects.
+        # Get all the PartSupported objects that have been selected for update
+        # https://docs.djangoproject.com/en/dev/ref/models/querysets/#in
+        parts_to_update = PartSupported.objects.filter(id__in=part_ids_to_update)
 
-        return render(request, 'support/update_many_part_supported.html', context)
+        # Now we update only the fields/attributes that do NOT have a null
+        # value in the form
+
+        # get value from the form
+        hostname = request.POST.get('hostname')
+        # if empty -> do nothing. 
+        # If there is a value -> update all records with that value
+        if hostname != "":
+            parts_to_update.update(hostname=hostname)
+
+        # repeat the same process. Most proabably this can be refractored        
+        part_number = request.POST.get('part_number')
+        if part_number != "":
+            parts_to_update.update(part_number=part_number)
+
+        # Once done, send to the Index page
+        return HttpResponseRedirect(reverse('support:index'))
 
 
+# KEEP
 def index(request):
     context = {'bodymessage': "Index view in Support. Maybe include a form/checkboxes"}
 
@@ -41,10 +57,13 @@ def index(request):
     return render(request, 'support/index.html', context)
 
 
+# this should be in a reconcile app?
 def add_to_support(request, part_id):
     add_discovered_part_to_support(part_id)
     return HttpResponseRedirect(reverse('support:reconcile'))
 
+
+# this should be in a reconcile app?
 def add_to_support_many(request):
     if request.method == 'POST':
 #        context = {'bodymessage': "add_to_support_many view in Support"}
@@ -54,29 +73,10 @@ def add_to_support_many(request):
         for part_id in part_ids:
             add_discovered_part_to_support(part_id)
 
-        '''
-        chosen_parts = request.POST.getlist('chosen_parts')
-        parts_to_add = []
-        for part_id in chosen_parts:
-            part_to_add = PartDiscovered.objects.get(id=part_id)
-            parts_to_add.append(part_to_add)
-
-        context['parts_to_add'] = parts_to_add
-
-        for part in parts_to_add:
-            add_part_to_support = PartSupported.objects.get_or_create(
-                hostname = part.hostname,
-                serial_number = part.serial_number,
-                comment = "Add to contract",
-                is_active = 1,
-                date_added = timezone.now(),
-                date_modified = timezone.now()
-                )
-
-#        return render(request, 'support/add_to_support_many.html', context)
-        '''
         return HttpResponseRedirect(reverse('support:reconcile'))
 
+
+# this should be in a reconcile app?
 def reconcile(request):
     context = {'bodymessage': "Reconcile view in Support."}
 
@@ -120,4 +120,4 @@ def add_discovered_part_to_support(discovered_part_id):
         is_active = 1,
         date_added = timezone.now(),
         date_modified = timezone.now()
-        )
+    )
