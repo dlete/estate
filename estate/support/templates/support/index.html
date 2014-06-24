@@ -12,6 +12,7 @@
 
     <table>
         <tr>
+            <td>Edit</td>
             <td>Select</td>
             <td>Hostname</td>
             <td>Serial number</td>
@@ -21,6 +22,7 @@
 
         {% for part in parts_supported %}
         <tr>
+            <td><a href="/support/edit_one/{{ part.id }}/">Edit</a></td>
             <td><input type="checkbox" name="chosen_parts" value="{{ part.id }}"></td>
             <td>{{ part.hostname }}</td>
             <td>{{ part.serial_number }}</td>

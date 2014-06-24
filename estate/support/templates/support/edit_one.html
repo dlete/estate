@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <p>{{ bodymessage }}</p>
+
+    <p>{{ part_supported }}</p>
+    <form action="/support/update_one/{{ part_supported.id }}/" method="post">
+        {% csrf_token %}
+        Hostname: <input type="text" name="hostname"><br>
+        Part Number: <input type="text" name="part_number"><br>
+        <input type="submit" value="Take me to Update One">
+    </form>
+
+{% endblock content %}
+

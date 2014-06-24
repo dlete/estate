@@ -8,6 +8,44 @@ from django.core.urlresolvers import reverse
 from support.forms import EditPartSupportedForm
 
 
+def edit_one(request, part_id):
+    context = {'bodymessage': "edit_one in Support."}
+
+    part_supported = PartSupported.objects.get(id=part_id)
+    context['part_supported'] = part_supported
+
+    return render(request, 'support/edit_one.html', context)
+
+def update_one(request, part_id):
+    context = {'bodymessage': "update_one in Support."}
+
+    part_supported = PartSupported.objects.get(id=part_id)
+    context['part_supported'] = part_supported
+
+    if request.method == 'POST':
+        # Now we update only the fields/attributes that do NOT have a null
+        # value in the form
+
+        # get value from the form
+        hostname = request.POST.get('hostname')
+        # if empty -> do nothing. 
+        # If there is a value -> update all records with that value
+        if hostname != "":
+            part_supported.hostname = hostname
+            part_supported.save()
+
+        # repeat the same process. Most proabably this can be refractored        
+        part_number = request.POST.get('part_number')
+        if part_number != "":
+            part_supported.part_number = part_number
+            part_supported.save()
+
+        # Once done, send to the Index page
+        return HttpResponseRedirect(reverse('support:index'))
+
+#    return render(request, 'support/update_one.html', context)
+
+
 # KEEP
 def edit_many_part_supported(request):
     if request.method == 'POST':
