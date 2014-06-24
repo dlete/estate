@@ -26,3 +26,41 @@ class PartSupported (models.Model):
 
     def __unicode__(self):
         return self.serial_number
+
+# this table should reside in a different, central?, database and info on it
+# be called via an API
+class Location (models.Model):
+    abbreviation = models.CharField(max_length=200, null=True)
+    internal_designation = models.CharField(max_length=200, null=True)
+    building = models.CharField(max_length=200, null=True)
+    street = models.CharField(max_length=200, null=True)
+    neighbourhood = models.CharField(max_length=200, null=True)
+    town_area = models.CharField(max_length=200, null=True)
+    postcode = models.CharField(max_length=200, null=True)
+    country = models.CharField(max_length=200, null=True)
+    gps = models.CharField(max_length=200, null=True)
+
+    def __unicode__(self):
+        return self.abbreviation
+
+
+# this table should reside in a different, central?, database and info on it
+# be called via an API
+class Project (models.Model):
+    abbreviation = models.CharField(max_length=200, null=True)
+    name = models.CharField(max_length=200, null=True)
+
+    def __unicode__(self):
+        return self.abbreviation
+
+
+class Budget(models.Model):
+    project = models.ForeignKey('Project')
+    abbreviation = models.CharField(max_length=200, null=True)
+    name = models.CharField(max_length=200, null=True)
+
+    def __unicode__(self):
+        # if we return self.project, we get the error 
+        # 'project' object has no attribute '__getitem__'
+        # have to specify to return self.project.abbreviation
+        return self.abbreviation
