@@ -12,4 +12,5 @@ urlpatterns = patterns('',
     url(r'^discoveries/', include('discoveries.urls', namespace="discoveries")),
     url(r'^scout/', include('scout.urls', namespace="scout")),
     url(r'^support/', include('support.urls', namespace="support")),
+    url(r'^$', 'support.views.index', name='home'),
 )
