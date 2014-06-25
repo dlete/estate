@@ -1,7 +1,20 @@
-{% extends 'scout/base.html' %}
+{% extends 'base.html' %}
 
-{% block title %}INDEX{% endblock %}
+{% block title %}{{ title }}{% endblock title%}
 
-{% block body_block %}
-<p>{{ boldmessage }}</p>
-{% endblock %}
+{% block content %}
+    <p>{{ bodymessage }}</p>
+
+    <p><a href="{% url 'scout:some_view' %}">Download file</a></p>
+
+    <table>
+    {% for part in discovered_parts %}
+    <tr>
+        <td>{{ part.hostname }}</td>
+        <td>{{ part.serial_number }}</td>
+        <td>{{ part.part_number }}</td>
+    </tr>
+    {% endfor %}
+    </table>
+
+{% endblock content %}

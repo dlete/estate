@@ -8,6 +8,6 @@ urlpatterns = patterns('',
     url(r'^sb/$', views.sb, name='sb'),
     url(r'^aa/$', views.aa, name='aa'),
     url(r'^ab/$', views.ab, name='ab'),
-    url(r'^f2edit/$', views.f2edit, name='f2edit'),
+    url(r'^some_view/$', views.some_view, name='some_view'),
 )
 

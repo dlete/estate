@@ -2,14 +2,36 @@ from django.shortcuts import render
 
 from scout.models import Discovery
 from scout.forms import SaForm
-from scout.forms import f2editForm
 from discoveries.models import PartDiscovered
 import logging
 
-def f2edit(request):
-    supported_parts = PartDiscovered.objects.all()[0:3]
-    form = f2editForm(initial={'interests.queryset': supported_parts})
-    return render(request, 'scout/f2edit.html', {'form': form})    
+# to use the Python CSV library
+import csv
+from django.http import HttpResponse
+
+def some_view(request):
+    # Create the HttpResponse object with the appropriate CSV header.
+    response = HttpResponse(content_type='text/csv')
+    response['Content-Disposition'] = 'attachment; filename="somefilename.csv"'
+
+#    writer = csv.writer(response)
+#    writer.writerow(['First row', 'Foo', 'Bar', 'Baz'])
+#    writer.writerow(['Second row', 'A', 'B', 'C', '"Testing"', "Here's a quote"])
+
+    parts = PartDiscovered.objects.all()
+    writer = csv.writer(response)
+    writer.writerow([
+        "Hostname",
+        "Part number",
+        "Serial number",
+    ])
+    for part in parts:
+        writer.writerow([
+            part.hostname,
+            part.part_number,
+            part.serial_number,
+        ])
+    return response
 
 
 def aa(request):
@@ -49,5 +71,10 @@ def sb(request):
 
 
 def index(request):
-    context = {'boldmessage': "This is the INDEX page of the scout app"}
+    context = {'title': "INDEX SCOUT"}
+    context['bodymessage'] = "Index page of the scout app"
+
+    discovered_parts = PartDiscovered.objects.all()
+    context['discovered_parts'] = discovered_parts
+
     return render(request, 'scout/index.html', context)
