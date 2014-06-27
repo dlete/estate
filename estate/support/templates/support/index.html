@@ -7,6 +7,11 @@
     <hr />
     <p>Parts Supported</p>
 
+    <form action="{% url 'support:index' %}" method="post">
+    {% csrf_token %}
+        <input type="submit" name="download_spreadsheet" value="Download as spreadsheet"><br>
+    </form>
+
     <form action="{% url 'support:edit_many_part_supported' %}" method="post">
     {% csrf_token %}
 

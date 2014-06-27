@@ -6,7 +6,9 @@ from django.utils import timezone
 from django.http import HttpResponseRedirect, HttpResponse
 from django.core.urlresolvers import reverse
 from support.forms import EditPartSupportedForm
-
+# to use the Python CSV library
+import csv
+from django.http import HttpResponse
 
 def edit_one(request, part_id):
     context = {'bodymessage': "edit_one in Support."}
@@ -92,7 +94,28 @@ def index(request):
     parts_supported = PartSupported.objects.all()
     context['parts_supported'] = parts_supported
 
-    return render(request, 'support/index.html', context)
+#    return render(request, 'support/index.html', context)
+
+    if request.method == 'GET':
+        ''' normal situation '''
+        return render(request, 'support/index.html', context)
+    if request.method == 'POST':
+        ''' user wants to download the contents of the page '''
+        if request.POST.get('download_spreadsheet'):
+#            return render(request, 'support/index.html', context)
+            # Create the HttpResponse object with the appropriate CSV header.
+            response = HttpResponse(content_type='text/csv')
+            response['Content-Disposition'] = 'attachment; filename="somefilename.csv"'
+            writer = csv.writer(response)
+            for part in parts_supported:
+                writer.writerow([
+                    part.hostname,
+                    part.part_number,
+                    part.serial_number,
+            ])
+            return response
+
+
 
 
 # this should be in a reconcile app?

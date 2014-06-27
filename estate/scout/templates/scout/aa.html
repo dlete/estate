@@ -7,14 +7,19 @@
 
     <p>{{ discovered_parts }}</p>
 
+    <form action="{% url 'scout:aa' %}" method="post">
+        {% csrf_token %}
+        <input type="submit" name="download_spreadsheet" value="Download as spreadsheet"><br>
+    </form>
+
     <form action="{% url 'scout:ab' %}" method="post">
         {% csrf_token %}
-        
+
         {% for part in parts %}
             <input type="checkbox" name="parts" value="{{ part.serial_number }}">{{ part.serial_number }}<br>
         {% endfor %}
 
-        <input type="submit" value="Go get them!"><br>
+        <input type="submit" name="regular_action" value="Go get them!"><br>
 
     </form>
 

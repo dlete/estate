@@ -9,6 +9,33 @@ import logging
 import csv
 from django.http import HttpResponse
 
+
+def export_csv(queryset):
+    # Create the HttpResponse object with the appropriate CSV header.
+    response = HttpResponse(content_type='text/csv')
+    response['Content-Disposition'] = 'attachment; filename="somefilename.csv"'
+
+#    writer = csv.writer(response)
+#    writer.writerow(['First row', 'Foo', 'Bar', 'Baz'])
+#    writer.writerow(['Second row', 'A', 'B', 'C', '"Testing"', "Here's a quote"])
+
+#    parts = PartDiscovered.objects.all()
+    parts = queryset
+    writer = csv.writer(response)
+    writer.writerow([
+        "Hostname",
+        "Part number",
+        "Serial number",
+    ])
+    for part in parts:
+        writer.writerow([
+            part.hostname,
+            part.part_number,
+            part.serial_number,
+        ])
+    return response
+
+
 def some_view(request):
     # Create the HttpResponse object with the appropriate CSV header.
     response = HttpResponse(content_type='text/csv')
@@ -41,7 +68,27 @@ def aa(request):
     parts = PartDiscovered.objects.all()[0:4]
     context['parts'] = parts
 
-    return render(request, 'scout/aa.html', context)
+    ''' normal situation '''
+    if request.method == 'GET':
+        return render(request, 'scout/aa.html', context)
+    ''' user wants to download the contents of the page '''
+    if request.method == 'POST':
+        if request.POST.get('download_spreadsheet'):
+            ''' works!
+            # Create the HttpResponse object with the appropriate CSV header.
+            response = HttpResponse(content_type='text/csv')
+            response['Content-Disposition'] = 'attachment; filename="somefilename.csv"'
+            writer = csv.writer(response)
+            for part in parts:
+                writer.writerow([
+                    part.hostname,
+                    part.part_number,
+                    part.serial_number,
+            ])
+            return response
+            '''
+            export_csv(parts)
+#            return render(request, 'scout/aa.html', context)
 
 
 def ab(request):
