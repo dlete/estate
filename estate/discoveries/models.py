@@ -8,6 +8,7 @@ from django.db import models
 # foreign key pointing to the same table
 class PartDiscovered (models.Model):
     hostname = models.CharField(max_length=200, null=True)
+    # add manufacturer (Cisco, Juniper, etc.)
     part_number = models.CharField(max_length=200, null=True)
     serial_number = models.CharField(max_length=200)
     part_type = models.PositiveSmallIntegerField(null=True)

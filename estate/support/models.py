@@ -8,6 +8,7 @@ class PartSupported (models.Model):
     comment = models.CharField(max_length=400, null=True)
     to_do = models.CharField(max_length=200, null=True)
     hostname = models.CharField(max_length=200, null=True)
+    # add manufacturer (Cisco, Juniper, etc.)
     part_number = models.CharField(max_length=200, null=True)
     description = models.CharField(max_length=200, null=True)
     serial_number = models.CharField(max_length=200)
@@ -22,7 +23,7 @@ class PartSupported (models.Model):
     date_added = models.DateTimeField('date added', null=True)
     date_modified = models.DateTimeField('date modified', null=True)
     date_removed = models.DateTimeField('date removed', null=True)
-# add date_last_discovered = models.DateTimeField('date last discovered', null=True)
+# add date_last_discovered? = models.DateTimeField('date last discovered', null=True)
 
     def __unicode__(self):
         return self.serial_number
