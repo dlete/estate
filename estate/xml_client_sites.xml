@@ -1,0 +1,2128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<clientdb api_version="1.0.3">
+  <head>
+    <application client="HEAnet" name="clientdb"/>
+    <api_function name="heanet/clientdb/api/sites/index" ver="0.1.001" description="Client Sites data "/>
+    <hostname>crue</hostname>
+    <remote_user>dlete</remote_user>
+    <generated_at>2014-06-27 09:42:13</generated_at>
+    <swdev_email>heanet-swdev@listserv.heanet.ie</swdev_email>
+    <!-- https://wiki.heanet.ie/ClientDB_Developer_Docs#ClientDB_API -->
+  </head>
+  <body>
+    <list_of_sites>
+      <site id="1">
+        <parent_type>Client</parent_type>
+        <id>1</id>
+        <abbreviation>TCD</abbreviation>
+        <name>Trinity College Dublin</name>
+        <company_id>1</company_id>
+        <lat>53.3444</lat>
+        <lng>-6.25833</lng>
+        <zoom>14</zoom>
+        <is_pop>false</is_pop>
+        <active>true</active>
+      </site>
+      <site id="2">
+        <parent_type>Client</parent_type>
+        <id>2</id>
+        <abbreviation>ITC</abbreviation>
+        <name>Institute of Technology Carlow</name>
+        <company_id>2</company_id>
+        <lat>52.8287</lat>
+        <lng>-6.93673</lng>
+        <zoom>14</zoom>
+        <is_pop>false</is_pop>
+        <active>true</active>
+      </site>
+      <site id="3">
+        <parent_type>Client</parent_type>
+        <id>3</id>
+        <abbreviation>ESRI</abbreviation>
+        <name>Economic and Social Research Institute</name>
+        <company_id>3</company_id>
+        <lat>53.3449</lat>
+        <lng>-6.23491</lng>
+        <zoom>14</zoom>
+        <is_pop>false</is_pop>
+        <active>true</active>
+      </site>
+      <site id="4">
+        <parent_type>Client</parent_type>
+        <id>4</id>
+        <abbreviation>NCI</abbreviation>
+        <name>National College of Ireland</name>
+        <company_id>4</company_id>
+        <lat>53.3489</lat>
+        <lng>-6.24292</lng>
+        <zoom>14</zoom>
+        <is_pop>false</is_pop>
+        <active>true</active>
+      </site>
+      <site id="5">
+        <parent_type>Client</parent_type>
+        <id>5</id>
+        <abbreviation>NQAI</abbreviation>
+        <name>National Qualifications Authority of Ireland</name>
+        <company_id>5</company_id>
+        <lat>53.3469</lat>
+        <lng>-6.26583</lng>
+        <zoom>14</zoom>
+        <is_pop>false</is_pop>
+        <active>true</active>
+      </site>
+      <site id="6">
+        <parent_type>Client</parent_type>
+        <id>6</id>
+        <abbreviation>MI</abbreviation>
+        <name>Marine Institute</name>
+        <company_id>6</company_id>
+        <lat>53.2477</lat>
+        <lng>-8.97815</lng>
+        <zoom>14</zoom>
+        <is_pop>false</is_pop>
+        <active>true</active>
+      </site>
+      <site id="7">
+        <parent_type>Client</parent_type>
+        <id>7</id>
+        <abbreviation>AIT</abbreviation>
+        <name>AIT Campus</name>
+        <company_id>7</company_id>
+        <lat>53.4169</lat>
+        <lng>-7.89936</lng>
+        <zoom>14</zoom>
+        <is_pop>false</is_pop>
+        <active>true</active>
+      </site>
+      <site id="8">
+        <parent_type>Client</parent_type>
+        <id>8</id>
+        <abbreviation>STACS</abbreviation>
+        <name>St Angela's College</name>
+        <company_id>42</company_id>
+        <lat>54.2589</lat>
+        <lng>-8.38365</lng>
+        <zoom>14</zoom>
+        <is_pop>false</is_pop>
+        <active>true</active>
+      </site>
+      <site id="9">
+        <parent_type>Client</parent_type>
+        <id>9</id>
+        <abbreviation>RCSI</abbreviation>
+        <name>Royal College of Surgeons in Ireland</name>
+        <company_id>9</company_id>
+        <lat>53.3389</lat>
+        <lng>-6.26158</lng>
+        <zoom>14</zoom>
+        <is_pop>false</is_pop>
+        <active>true</active>
+      </site>
+      <site id="10">
+        <parent_type>Client</parent_type>
+        <id>10</id>
+        <abbreviation>GDA</abbreviation>
+        <name>Grangegorman Development Agency</name>
+        <company_id>10</company_id>
+        <lat>53.355</lat>
+        <lng>-6.27667</lng>
+        <zoom>14</zoom>
+        <is_pop>false</is_pop>
+        <active>true</active>
+      </site>
+      <site id="11">
+        <parent_type>Client</parent_type>
+        <id>11</id>
+        <abbreviation>CIT</abbreviation>
+        <name>CIT Campus</name>
+        <company_id>11</company_id>
+        <lat>51.8853</lat>
+        <lng>-8.5341</lng>
+        <zoom>14</zoom>
+        <is_pop>false</is_pop>
+        <active>true</active>
+      </site>
+      <site id="12">
+        <parent_type>Client</parent_type>
+        <id>12</id>
+        <abbreviation>NCRI</abbreviation>
+        <name>National Cancer Registry Ireland</name>
+        <company_id>12</company_id>
+        <lat>51.8535</lat>
+        <lng>-8.47632</lng>
+        <zoom>14</zoom>
+        <is_pop>false</is_pop>
+        <active>true</active>
+      </site>
+      <site id="13">
+        <parent_type>Client</parent_type>
+        <id>13</id>
+        <abbreviation>BELFIELD</abbreviation>
+        <name>UCD Campus</name>
+        <company_id>13</company_id>
+        <lat>53.307</lat>
+        <lng>-6.22234</lng>
+        <zoom>14</zoom>
+        <is_pop>true</is_pop>
+        <active>true</active>
+      </site>
+      <site id="14">
+        <parent_type>Client</parent_type>
+        <id>14</id>
+        <abbreviation>BCFE</abbreviation>
+        <name>Ballyfermot College of Further Education</name>
+        <company_id>14</company_id>
+        <lat>53.3406</lat>
+        <lng>-6.35102</lng>
+        <zoom>14</zoom>
+        <is_pop>false</is_pop>
+        <active>true</active>
+      </site>
+      <site id="15">
+        <parent_type>Client</parent_type>
+        <id>15</id>
+        <abbreviation>CAO</abbreviation>
+        <name>Central Applications Office</name>
+        <company_id>15</company_id>
+        <lat>53.2738</lat>
+        <lng>-9.05178</lng>
+        <zoom>14</zoom>
+        <is_pop>false</is_pop>
+        <active>true</active>
+      </site>
+      <site id="16">
+        <parent_type>Client</parent_type>
+        <id>16</id>
+        <abbreviation>CARLOWC</abbreviation>
+        <name>Carlow College</name>
+        <company_id>16</company_id>
+        <lat>52.8374</lat>
+        <lng>-6.92907</lng>
+        <zoom>14</zoom>
+        <is_pop>false</is_pop>
+        <active>true</active>
+      </site>
+      <site id="17">
+        <parent_type>Client</parent_type>
+        <id>17</id>
+        <abbreviation>DCU</abbreviation>
+        <name>DCU Campus</name>
+        <company_id>17</company_id>
+        <lat>53.386</lat>
+        <lng>-6.25918</lng>
+        <zoom>14</zoom>
+        <is_pop>false</is_pop>
+        <active>true</active>
+      </site>
+      <site id="18">
+        <parent_type>Client</parent_type>
+        <id>18</id>
+        <abbreviation>DIAS-BUR</abbreviation>
+        <name>DIAS Burlington</name>
+        <company_id>18</company_id>
+        <lat>53.3315</lat>
+        <lng>-6.24618</lng>
+        <zoom>14</zoom>
+        <is_pop>false</is_pop>
+        <active>true</active>
+      </site>
+      <site id="19">
+        <parent_type>Client</parent_type>
+        <id>19</id>
+        <abbreviation>IUA</abbreviation>
+        <name>Irish Universities Association</name>
+        <company_id>19</company_id>
+        <lat>53.3386</lat>
+        <lng>-6.24738</lng>
+        <zoom>14</zoom>
+        <is_pop>false</is_pop>
+        <active>true</active>
+      </site>
+      <site id="20">
+        <parent_type>Client</parent_type>
+        <id>20</id>
+        <abbreviation>GTI</abbreviation>
+        <name>Georgia Tech Ireland</name>
+        <company_id>20</company_id>
+        <lat>53.415</lat>
+        <lng>-7.90052</lng>
+        <zoom>14</zoom>
+        <is_pop>false</is_pop>
+        <active>true</active>
+      </site>
+      <site id="21">
+        <parent_type>Client</parent_type>
+        <id>21</id>
+        <abbreviation>DIT</abbreviation>
+        <name>DIT (Rathmines)</name>
+        <company_id>21</company_id>
+        <lat>53.3163</lat>
+        <lng>-6.26531</lng>
+        <zoom>14</zoom>
+        <is_pop>false</is_pop>
+        <active>false</active>
+      </site>
+      <site id="22">
+        <parent_type>Client</parent_type>
+        <id>22</id>
+        <abbreviation>DUN</abbreviation>
+        <name>DKIT Campus</name>
+        <company_id>22</company_id>
+        <lat>53.985</lat>
+        <lng>-6.39353</lng>
+        <zoom>14</zoom>
+        <is_pop>false</is_pop>
+        <active>true</active>
+      </site>
+      <site id="23">
+        <parent_type>Client</parent_type>
+        <id>23</id>
+        <abbreviation>IADT</abbreviation>
+        <name>IADT Campus</name>
+        <company_id>23</company_id>
+        <lat>53.2809</lat>
+        <lng>-6.15576</lng>
+        <zoom>14</zoom>
+        <is_pop>false</is_pop>
+        <active>true</active>
+      </site>
+      <site id="24">
+        <parent_type>Client</parent_type>
+        <id>24</id>
+        <abbreviation>EPA</abbreviation>
+        <name>Environmental Protection Agency</name>
+        <company_id>24</company_id>
+        <lat>52.3392</lat>
+        <lng>-6.46012</lng>
+        <zoom>14</zoom>
+        <is_pop>false</is_pop>
+        <active>true</active>
+      </site>
+      <site id="25">
+        <parent_type>Client</parent_type>
+        <id>25</id>
+        <abbreviation>GMIT</abbreviation>
+        <name>GMIT Main Campus</name>
+        <company_id>25</company_id>
+        <lat>53.2786</lat>
+        <lng>-9.01038</lng>
+        <zoom>14</zoom>
+        <is_pop>false</is_pop>
+        <active>true</active>
+      </site>
+      <site id="26">
+        <parent_type>Client</parent_type>
+        <id>26</id>
+        <abbreviation>HEA</abbreviation>
+        <name>Higher Education Authority</name>
+        <company_id>26</company_id>
+        <lat>53.3166</lat>
+        <lng>-6.22159</lng>
+        <zoom>14</zoom>
+        <is_pop>false</is_pop>
+        <active>true</active>
+      </site>
+      <site id="27">
+        <parent_type>Client</parent_type>
+        <id>27</id>
+        <abbreviation>QQI</abbreviation>
+        <name>Quality and Qualifications Ireland - Admin</name>
+        <company_id>647</company_id>
+        <lat>53.3407</lat>
+        <lng>-6.24647</lng>
+        <zoom>14</zoom>
+        <is_pop>false</is_pop>
+        <active>true</active>
+      </site>
+      <site id="28">
+        <parent_type>Client</parent_type>
+        <id>28</id>
+        <abbreviation>HRB</abbreviation>
+        <name>Health Research Board</name>
+        <company_id>28</company_id>
+        <lat>53.3391</lat>
+        <lng>-6.24494</lng>
+        <zoom>18</zoom>
+        <is_pop>false</is_pop>
+        <active>true</active>
+      </site>
+      <site id="29">
+        <parent_type>Client</parent_type>
+        <id>29</id>
+        <abbreviation>IEDR</abbreviation>
+        <name>IE Domain Registry</name>
+        <company_id>29</company_id>
+        <lat>53.3441</lat>
+        <lng>-6.26749</lng>
+        <zoom>14</zoom>
+        <is_pop>false</is_pop>
+        <active>true</active>
+      </site>
+      <site id="30">
+        <parent_type>Client</parent_type>
+        <id>30</id>
+        <abbreviation>IOTI</abbreviation>
+        <name>Institutes of Technology Ireland</name>
+        <company_id>30</company_id>
+        <lat>53.3342</lat>
+        <lng>-6.25591</lng>
+        <zoom>14</zoom>
+        <is_pop>false</is_pop>
+        <active>true</active>
+      </site>
+      <site id="31">
+        <parent_type>Client</parent_type>
+        <id>31</id>
+        <abbreviation>IPA</abbreviation>
+        <name>Institute of Public Administration</name>
+        <company_id>31</company_id>
+        <lat>53.3166</lat>
+        <lng>-6.22159</lng>
+        <zoom>14</zoom>
+        <is_pop>false</is_pop>
+        <active>true</active>
+      </site>
+      <site id="32">
+        <parent_type>Client</parent_type>
+        <id>32</id>
+        <abbreviation>ITB</abbreviation>
+        <name>Institute of Technology Blanchardstown</name>
+        <company_id>32</company_id>
+        <lat>53.4031</lat>
+        <lng>-6.38074</lng>
+        <zoom>14</zoom>
+        <is_pop>false</is_pop>
+        <active>true</active>
+      </site>
+      <site id="33">
+        <parent_type>Client</parent_type>
+        <id>33</id>
+        <abbreviation>ITTALLAGHT</abbreviation>
+        <name>Institute of Technology Tallaght</name>
+        <company_id>33</company_id>
+        <lat>53.2911</lat>
+        <lng>-6.36363</lng>
+        <zoom>14</zoom>
+        <is_pop>false</is_pop>
+        <active>true</active>
+      </site>
+      <site id="34">
+        <parent_type>Client</parent_type>
+        <id>34</id>
+        <abbreviation>WIT</abbreviation>
+        <name>WIT Main Campus</name>
+        <company_id>34</company_id>
+        <lat>52.2452</lat>
+        <lng>-7.1396</lng>
+        <zoom>14</zoom>
+        <is_pop>false</is_pop>
+        <active>true</active>
+      </site>
+      <site id="35">
+        <parent_type>Client</parent_type>
+        <id>35</id>
+        <abbreviation>LIM</abbreviation>
+        <name>University of Limerick</name>
+        <company_id>35</company_id>
+        <lat>52.6735</lat>
+        <lng>-8.5727</lng>
+        <zoom>14</zoom>
+        <is_pop>false</is_pop>
+        <active>true</active>
+      </site>
+      <site id="36">
+        <parent_type>Client</parent_type>
+        <id>36</id>
+        <abbreviation>CORK</abbreviation>
+        <name>University College Cork</name>
+        <company_id>36</company_id>
+        <lat>51.8919</lat>
+        <lng>-8.49344</lng>
+        <zoom>14</zoom>
+        <is_pop>false</is_pop>
+        <active>true</active>
+      </site>
+      <site id="37">
+        <parent_type>Client</parent_type>
+        <id>37</id>
+        <abbreviation>ITT</abbreviation>
+        <name>IT Tralee campus</name>
+        <company_id>37</company_id>
+        <lat>52.2696</lat>
+        <lng>-9.7001</lng>
+        <zoom>14</zoom>
+        <is_pop>false</is_pop>
+        <active>true</active>
+      </site>
+      <site id="38">
+        <parent_type>Client</parent_type>
+        <id>38</id>
+        <abbreviation>TI</abbreviation>
+        <name>Tipperary Institute</name>
+        <company_id>38</company_id>
+        <lat>52.6855</lat>
+        <lng>-7.82707</lng>
+        <zoom>14</zoom>
+        <is_pop>false</is_pop>
+        <active>false</active>
+      </site>
+      <site id="39">
+        <parent_type>Client</parent_type>
+        <id>39</id>
+        <abbreviation>ITS</abbreviation>
+        <name>Institute of Technology Sligo</name>
+        <company_id>39</company_id>
+        <lat>54.2785</lat>
+        <lng>-8.45864</lng>
+        <zoom>14</zoom>
+        <is_pop>false</is_pop>
+        <active>true</active>
+      </site>
+      <site id="40">
+        <parent_type>Client</parent_type>
+        <id>40</id>
+        <abbreviation>RIA</abbreviation>
+        <name>Royal Irish Academy</name>
+        <company_id>40</company_id>
+        <lat>53.3407</lat>
+        <lng>-6.25841</lng>
+        <zoom>14</zoom>
+        <is_pop>false</is_pop>
+        <active>true</active>
+      </site>
+      <site id="41">
+        <parent_type>Client</parent_type>
+        <id>41</id>
+        <abbreviation>NUI</abbreviation>
+        <name>National University of Ireland</name>
+        <company_id>41</company_id>
+        <lat>53.3385</lat>
+        <lng>-6.24745</lng>
+        <zoom>14</zoom>
+        <is_pop>false</is_pop>
+        <active>true</active>
+      </site>
+      <site id="42">
+        <parent_type>Client</parent_type>
+        <id>42</id>
+        <abbreviation>GAL</abbreviation>
+        <name>NUIG Campus</name>
+        <company_id>42</company_id>
+        <lat>53.2795</lat>
+        <lng>-9.06042</lng>
+        <zoom>14</zoom>
+        <is_pop>false</is_pop>
+        <active>true</active>
+      </site>
+      <site id="43">
+        <parent_type>Client</parent_type>
+        <id>43</id>
+        <abbreviation>NUIM</abbreviation>
+        <name>NUIM Campus</name>
+        <company_id>43</company_id>
+        <lat>53.3812</lat>
+        <lng>-6.59226</lng>
+        <zoom>16</zoom>
+        <is_pop>true</is_pop>
+        <active>true</active>
+      </site>
+      <site id="44">
+        <parent_type>Client</parent_type>
+        <id>44</id>
+        <abbreviation>NDRC</abbreviation>
+        <name>National Digital Research Centre</name>
+        <company_id>44</company_id>
+        <lat>53.341</lat>
+        <lng>-6.28468</lng>
+        <zoom>14</zoom>
+        <is_pop>false</is_pop>
+        <active>true</active>
+      </site>
+      <site id="46">
+        <parent_type>Client</parent_type>
+        <id>46</id>
+        <abbreviation>LIT</abbreviation>
+        <name>LIT Main Campus</name>
+        <company_id>46</company_id>
+        <lat>52.6738</lat>
+        <lng>-8.64812</lng>
+        <zoom>15</zoom>
+        <is_pop>false</is_pop>
+        <active>true</active>
+      </site>
+      <site id="47">
+        <parent_type>Client</parent_type>
+        <id>47</id>
+        <abbreviation>LYIT</abbreviation>
+        <name>Letterkenny Institute of Technology</name>
+        <company_id>47</company_id>
+        <lat>54.9501</lat>
+        <lng>-7.71838</lng>
+        <zoom>14</zoom>
+        <is_pop>false</is_pop>
+        <active>true</active>
+      </site>
+      <site id="48">
+        <parent_type>Client</parent_type>
+        <id>48</id>
+        <abbreviation>NCAD</abbreviation>
+        <name>National College of Art and Design</name>
+        <company_id>48</company_id>
+        <lat>53.3429</lat>
+        <lng>-6.2797</lng>
+        <zoom>14</zoom>
+        <is_pop>false</is_pop>
+        <active>true</active>
+      </site>
+      <site id="49">
+        <parent_type>Client</parent_type>
+        <id>49</id>
+        <abbreviation>FUMBALLYSQ</abbreviation>
+        <name>An Cheim</name>
+        <company_id>49</company_id>
+        <lat>53.337</lat>
+        <lng>-6.27382</lng>
+        <zoom>14</zoom>
+        <is_pop>false</is_pop>
+        <active>true</active>
+      </site>
+      <site id="50">
+        <parent_type>Client</parent_type>
+        <id>50</id>
+        <abbreviation>KILLESTER</abbreviation>
+        <name>CDVEC-Killester</name>
+        <company_id>50</company_id>
+        <lat>53.3788</lat>
+        <lng>-6.23187</lng>
+        <zoom>14</zoom>
+        <is_pop>false</is_pop>
+        <active>true</active>
+      </site>
+      <site id="51">
+        <parent_type>Client</parent_type>
+        <id>51</id>
+        <abbreviation>WHITEHALL</abbreviation>
+        <name>CDVEC-Whitehall</name>
+        <company_id>51</company_id>
+        <lat>53.3947</lat>
+        <lng>-6.24555</lng>
+        <zoom>14</zoom>
+        <is_pop>false</is_pop>
+        <active>true</active>
+      </site>
+      <site id="52">
+        <parent_type>Client</parent_type>
+        <id>52</id>
+        <abbreviation>LIBERTIES</abbreviation>
+        <name>CDVEC-Liberties</name>
+        <company_id>52</company_id>
+        <lat>53.3406</lat>
+        <lng>-6.27122</lng>
+        <zoom>14</zoom>
+        <is_pop>false</is_pop>
+        <active>true</active>
+      </site>
+      <site id="53">
+        <parent_type>Client</parent_type>
+        <id>53</id>
+        <abbreviation>PAC</abbreviation>
+        <name>Postgraduate Applications Centre</name>
+        <company_id>53</company_id>
+        <lat>53.2762</lat>
+        <lng>-9.05458</lng>
+        <zoom>14</zoom>
+        <is_pop>false</is_pop>
+        <active>true</active>
+      </site>
+      <site id="55">
+        <parent_type>Client</parent_type>
+        <id>55</id>
+        <abbreviation>GD5</abbreviation>
+        <name>HEAnet GD5</name>
+        <company_id>55</company_id>
+        <lat>53.3496</lat>
+        <lng>-6.24659</lng>
+        <zoom>14</zoom>
+        <is_pop>false</is_pop>
+        <active>true</active>
+      </site>
+      <site id="57">
+        <parent_type>Client</parent_type>
+        <id>57</id>
+        <abbreviation>ICHEC</abbreviation>
+        <name>ICHEC</name>
+        <company_id>57</company_id>
+        <lat>53.2801</lat>
+        <lng>-9.05856</lng>
+        <zoom>16</zoom>
+        <is_pop>false</is_pop>
+        <active>true</active>
+      </site>
+      <site id="58">
+        <parent_type>Client</parent_type>
+        <id>58</id>
+        <abbreviation>MATERDEI</abbreviation>
+        <name>Mater Dei (DCU)</name>
+        <company_id>17</company_id>
+        <lat>53.3634</lat>
+        <lng>-6.25553</lng>
+        <zoom>14</zoom>
+        <is_pop>false</is_pop>
+        <active>true</active>
+      </site>
+      <site id="59">
+        <parent_type>Client</parent_type>
+        <id>59</id>
+        <abbreviation>CSM</abbreviation>
+        <name>Cork School of Music</name>
+        <company_id>11</company_id>
+        <lat>51.896</lat>
+        <lng>-8.46818</lng>
+        <zoom>14</zoom>
+        <is_pop>false</is_pop>
+        <active>true</active>
+      </site>
+      <site id="60">
+        <parent_type>Client</parent_type>
+        <id>60</id>
+        <abbreviation>BLACKROCK</abbreviation>
+        <name>Blackrock Castle Observatory</name>
+        <company_id>11</company_id>
+        <lat>51.9</lat>
+        <lng>-8.40243</lng>
+        <zoom>14</zoom>
+        <is_pop>false</is_pop>
+        <active>true</active>
+      </site>
+      <site id="62">
+        <parent_type>Client</parent_type>
+        <id>62</id>
+        <abbreviation>SPD</abbreviation>
+        <name>St. Patrick's Drumcondra</name>
+        <company_id>17</company_id>
+        <lat>53.3716</lat>
+        <lng>-6.25514</lng>
+        <zoom>14</zoom>
+        <is_pop>false</is_pop>
+        <active>true</active>
+      </site>
+      <site id="63">
+        <parent_type>Client</parent_type>
+        <id>63</id>
+        <abbreviation>CSN</abbreviation>
+        <name>Coláiste Stiofáin Naofa</name>
+        <company_id>63</company_id>
+        <lat>51.8773</lat>
+        <lng>-8.48117</lng>
+        <zoom>14</zoom>
+        <is_pop>false</is_pop>
+        <active>true</active>
+      </site>
+      <site id="65">
+        <parent_type>Client</parent_type>
+        <id>65</id>
+        <abbreviation>GSI</abbreviation>
+        <name>Geological Survey of Ireland</name>
+        <company_id>65</company_id>
+        <lat>53.3371</lat>
+        <lng>-6.23501</lng>
+        <zoom>14</zoom>
+        <is_pop>false</is_pop>
+        <active>false</active>
+      </site>
+      <site id="66">
+        <parent_type>Client</parent_type>
+        <id>66</id>
+        <abbreviation>IRCHSS</abbreviation>
+        <name>Irish Research Council for the Humanities and Social Sciences</name>
+        <company_id>66</company_id>
+        <lat>53.3103</lat>
+        <lng>-6.22159</lng>
+        <zoom>14</zoom>
+        <is_pop>false</is_pop>
+        <active>false</active>
+      </site>
+      <site id="67">
+        <parent_type>Client</parent_type>
+        <id>67</id>
+        <abbreviation>IRCSET</abbreviation>
+        <name>Irish Research Council for Science, Engineering and Technology</name>
+        <company_id>67</company_id>
+        <lat>53.3103</lat>
+        <lng>-6.22159</lng>
+        <zoom>14</zoom>
+        <is_pop>false</is_pop>
+        <active>false</active>
+      </site>
+      <site id="68">
+        <parent_type>Client</parent_type>
+        <id>68</id>
+        <abbreviation>GCT</abbreviation>
+        <name>Garda College</name>
+        <company_id>68</company_id>
+        <lat>52.7911</lat>
+        <lng>-7.84106</lng>
+        <zoom>14</zoom>
+        <is_pop>false</is_pop>
+        <active>false</active>
+      </site>
+      <site id="69">
+        <parent_type>Client</parent_type>
+        <id>69</id>
+        <abbreviation>TSSG</abbreviation>
+        <name>Telecommunications Software &amp; Systems Group</name>
+        <company_id>34</company_id>
+        <lat>52.2497</lat>
+        <lng>-7.17716</lng>
+        <zoom>14</zoom>
+        <is_pop>false</is_pop>
+        <active>true</active>
+      </site>
+      <site id="77">
+        <parent_type>Client</parent_type>
+        <id>77</id>
+        <abbreviation>RCPI</abbreviation>
+        <name>Royal College of Physicians of Ireland</name>
+        <company_id>77</company_id>
+        <lat>53.3413</lat>
+        <lng>-6.25703</lng>
+        <zoom>14</zoom>
+        <is_pop>false</is_pop>
+        <active>true</active>
+      </site>
+      <site id="80">
+        <parent_type>Client</parent_type>
+        <id>80</id>
+        <abbreviation>LETTERFRACK</abbreviation>
+        <name>Letterfrack (GMIT)</name>
+        <company_id>25</company_id>
+        <lat>53.5543</lat>
+        <lng>-9.95035</lng>
+        <zoom>14</zoom>
+        <is_pop>false</is_pop>
+        <active>true</active>
+      </site>
+      <site id="83">
+        <parent_type>Client</parent_type>
+        <id>83</id>
+        <abbreviation>COA</abbreviation>
+        <name>College of Anaesthetists of Ireland</name>
+        <company_id>83</company_id>
+        <lat>53.3402</lat>
+        <lng>-6.24804</lng>
+        <zoom>14</zoom>
+        <is_pop>false</is_pop>
+        <active>true</active>
+      </site>
+      <site id="86">
+        <parent_type>Client</parent_type>
+        <id>86</id>
+        <abbreviation>CASTLEBAR</abbreviation>
+        <name>Castlebar (GMIT)</name>
+        <company_id>25</company_id>
+        <lat>53.8543</lat>
+        <lng>-9.3013</lng>
+        <zoom>14</zoom>
+        <is_pop>false</is_pop>
+        <active>true</active>
+      </site>
+      <site id="89">
+        <parent_type>Client</parent_type>
+        <id>89</id>
+        <abbreviation>CM</abbreviation>
+        <name>Cluain Mhuire (GMIT)</name>
+        <company_id>25</company_id>
+        <lat>53.2874</lat>
+        <lng>-9.01945</lng>
+        <zoom>14</zoom>
+        <is_pop>false</is_pop>
+        <active>true</active>
+      </site>
+      <site id="92">
+        <parent_type>Client</parent_type>
+        <id>92</id>
+        <abbreviation>NMCI</abbreviation>
+        <name>National Maritime College of Ireland</name>
+        <company_id>11</company_id>
+        <lat>51.8325</lat>
+        <lng>-8.3059</lng>
+        <zoom>14</zoom>
+        <is_pop>false</is_pop>
+        <active>true</active>
+      </site>
+      <site id="95">
+        <parent_type>Client</parent_type>
+        <id>95</id>
+        <abbreviation>CRAWFORD</abbreviation>
+        <name>Crawford College</name>
+        <company_id>11</company_id>
+        <lat>51.8961</lat>
+        <lng>-8.48127</lng>
+        <zoom>14</zoom>
+        <is_pop>false</is_pop>
+        <active>true</active>
+      </site>
+      <site id="98">
+        <parent_type>Client</parent_type>
+        <id>98</id>
+        <abbreviation>DCU-ORI</abbreviation>
+        <name>O'Reilly Institute (DCU)</name>
+        <company_id>17</company_id>
+        <lat>53.3842</lat>
+        <lng>-6.25448</lng>
+        <zoom>14</zoom>
+        <is_pop>false</is_pop>
+        <active>false</active>
+      </site>
+      <site id="101">
+        <parent_type>Client</parent_type>
+        <id>101</id>
+        <abbreviation>ALLHALLOWS</abbreviation>
+        <name>All Hallows College</name>
+        <company_id>17</company_id>
+        <lat>53.3709</lat>
+        <lng>-6.2493</lng>
+        <zoom>14</zoom>
+        <is_pop>false</is_pop>
+        <active>true</active>
+      </site>
+      <site id="104">
+        <parent_type>Client</parent_type>
+        <id>104</id>
+        <abbreviation>OUTREACH</abbreviation>
+        <name>UL Outreach Centre</name>
+        <company_id>35</company_id>
+        <lat>52.6477</lat>
+        <lng>-8.61605</lng>
+        <zoom>14</zoom>
+        <is_pop>false</is_pop>
+        <active>true</active>
+      </site>
+      <site id="107">
+        <parent_type>Client</parent_type>
+        <id>107</id>
+        <abbreviation>MIC</abbreviation>
+        <name>Mary Immaculate College of Education</name>
+        <company_id>35</company_id>
+        <lat>52.6529</lat>
+        <lng>-8.64013</lng>
+        <zoom>14</zoom>
+        <is_pop>false</is_pop>
+        <active>true</active>
+      </site>
+      <site id="110">
+        <parent_type>Client</parent_type>
+        <id>110</id>
+        <abbreviation>HMRC</abbreviation>
+        <name>Hydraulics and Marine Research Centre</name>
+        <company_id>36</company_id>
+        <lat>51.8775</lat>
+        <lng>-8.48574</lng>
+        <zoom>14</zoom>
+        <is_pop>false</is_pop>
+        <active>true</active>
+      </site>
+      <site id="113">
+        <parent_type>Client</parent_type>
+        <id>113</id>
+        <abbreviation>CSA</abbreviation>
+        <name>Cork School of Architecture</name>
+        <company_id>36</company_id>
+        <lat>51.8951</lat>
+        <lng>-8.46666</lng>
+        <zoom>14</zoom>
+        <is_pop>false</is_pop>
+        <active>true</active>
+      </site>
+      <site id="116">
+        <parent_type>Client</parent_type>
+        <id>116</id>
+        <abbreviation>TIPPTHURLES</abbreviation>
+        <name>TippInst Thurles Campus</name>
+        <company_id>46</company_id>
+        <lat>52.6861</lat>
+        <lng>-7.82467</lng>
+        <zoom>14</zoom>
+        <is_pop>false</is_pop>
+        <active>true</active>
+      </site>
+      <site id="119">
+        <parent_type>Client</parent_type>
+        <id>119</id>
+        <abbreviation>TIPPCLONMEL</abbreviation>
+        <name>TippInst Clonmel Campus</name>
+        <company_id>46</company_id>
+        <lat>52.3555</lat>
+        <lng>-7.70339</lng>
+        <zoom>14</zoom>
+        <is_pop>false</is_pop>
+        <active>true</active>
+      </site>
+      <site id="122">
+        <parent_type>Client</parent_type>
+        <id>122</id>
+        <abbreviation>KILLYBEGS</abbreviation>
+        <name>Killybegs College (LYIT)</name>
+        <company_id>47</company_id>
+        <lat>54.6362</lat>
+        <lng>-8.44171</lng>
+        <zoom>14</zoom>
+        <is_pop>false</is_pop>
+        <active>true</active>
+      </site>
+      <site id="125">
+        <parent_type>Client</parent_type>
+        <id>125</id>
+        <abbreviation>CONFHSE</abbreviation>
+        <name>WIT Confederation House</name>
+        <company_id>34</company_id>
+        <lat>52.2444</lat>
+        <lng>-7.15879</lng>
+        <zoom>14</zoom>
+        <is_pop>false</is_pop>
+        <active>false</active>
+      </site>
+      <site id="128">
+        <parent_type>Client</parent_type>
+        <id>128</id>
+        <abbreviation>COL</abbreviation>
+        <name>WIT College St</name>
+        <company_id>34</company_id>
+        <lat>52.255</lat>
+        <lng>-7.11339</lng>
+        <zoom>14</zoom>
+        <is_pop>false</is_pop>
+        <active>true</active>
+      </site>
+      <site id="131">
+        <parent_type>Client</parent_type>
+        <id>131</id>
+        <abbreviation>WEXFORD</abbreviation>
+        <name>ITC Wexford centre</name>
+        <company_id>2</company_id>
+        <lat>52.3351</lat>
+        <lng>-6.47242</lng>
+        <zoom>14</zoom>
+        <is_pop>false</is_pop>
+        <active>true</active>
+      </site>
+      <site id="134">
+        <parent_type>Client</parent_type>
+        <id>134</id>
+        <abbreviation>WICKLOW</abbreviation>
+        <name>ITC Wicklow Centre</name>
+        <company_id>2</company_id>
+        <lat>52.9958</lat>
+        <lng>-6.08059</lng>
+        <zoom>13</zoom>
+        <is_pop>false</is_pop>
+        <active>true</active>
+      </site>
+      <site id="137">
+        <parent_type>Client</parent_type>
+        <id>137</id>
+        <abbreviation>DIAS-FITZ</abbreviation>
+        <name>DIAS Fitzwilliam</name>
+        <company_id>18</company_id>
+        <lat>53.3331</lat>
+        <lng>-6.25277</lng>
+        <zoom>14</zoom>
+        <is_pop>false</is_pop>
+        <active>true</active>
+      </site>
+      <site id="140">
+        <parent_type>Client</parent_type>
+        <id>140</id>
+        <abbreviation>DIAS</abbreviation>
+        <name>DIAS Merrion</name>
+        <company_id>18</company_id>
+        <lat>53.3398</lat>
+        <lng>-6.24942</lng>
+        <zoom>14</zoom>
+        <is_pop>false</is_pop>
+        <active>true</active>
+      </site>
+      <site id="143">
+        <parent_type>Client</parent_type>
+        <id>143</id>
+        <abbreviation>DIT-CB</abbreviation>
+        <name>DIT Cathal Brugha</name>
+        <company_id>21</company_id>
+        <lat>53.3521</lat>
+        <lng>-6.2598</lng>
+        <zoom>14</zoom>
+        <is_pop>false</is_pop>
+        <active>false</active>
+      </site>
+      <site id="146">
+        <parent_type>Client</parent_type>
+        <id>146</id>
+        <abbreviation>AIRPORT</abbreviation>
+        <name>DIT Airport</name>
+        <company_id>21</company_id>
+        <lat>53.4245</lat>
+        <lng>-6.20183</lng>
+        <zoom>14</zoom>
+        <is_pop>false</is_pop>
+        <active>true</active>
+      </site>
+      <site id="149">
+        <parent_type>Client</parent_type>
+        <id>149</id>
+        <abbreviation>BOLTONST</abbreviation>
+        <name>DIT Bolton St</name>
+        <company_id>21</company_id>
+        <lat>53.3513</lat>
+        <lng>-6.26919</lng>
+        <zoom>14</zoom>
+        <is_pop>false</is_pop>
+        <active>true</active>
+      </site>
+      <site id="152">
+        <parent_type>Client</parent_type>
+        <id>152</id>
+        <abbreviation>DIT-KEV</abbreviation>
+        <name>DIT Kevin St</name>
+        <company_id>21</company_id>
+        <lat>53.3377</lat>
+        <lng>-6.26678</lng>
+        <zoom>14</zoom>
+        <is_pop>false</is_pop>
+        <active>false</active>
+      </site>
+      <site id="155">
+        <parent_type>Client</parent_type>
+        <id>155</id>
+        <abbreviation>MOUNTJOY</abbreviation>
+        <name>DIT Mountjoy Square</name>
+        <company_id>21</company_id>
+        <lat>53.3566</lat>
+        <lng>-6.25745</lng>
+        <zoom>14</zoom>
+        <is_pop>false</is_pop>
+        <active>true</active>
+      </site>
+      <site id="158">
+        <parent_type>Client</parent_type>
+        <id>158</id>
+        <abbreviation>SAD</abbreviation>
+        <name>School of Art and Design</name>
+        <company_id>46</company_id>
+        <lat>52.6653</lat>
+        <lng>-8.61287</lng>
+        <zoom>16</zoom>
+        <is_pop>false</is_pop>
+        <active>true</active>
+      </site>
+      <site id="161">
+        <parent_type>Client</parent_type>
+        <id>161</id>
+        <abbreviation>DERI</abbreviation>
+        <name>Digital Enterprise Research Institute</name>
+        <company_id>42</company_id>
+        <lat>53.2901</lat>
+        <lng>-9.07376</lng>
+        <zoom>14</zoom>
+        <is_pop>false</is_pop>
+        <active>true</active>
+      </site>
+      <site id="164">
+        <parent_type>Client</parent_type>
+        <id>164</id>
+        <abbreviation>OLC</abbreviation>
+        <name>Open Learning Centre</name>
+        <company_id>42</company_id>
+        <lat>53.2772</lat>
+        <lng>-9.07698</lng>
+        <zoom>14</zoom>
+        <is_pop>false</is_pop>
+        <active>true</active>
+      </site>
+      <site id="167">
+        <parent_type>Client</parent_type>
+        <id>167</id>
+        <abbreviation>UCHG</abbreviation>
+        <name>University College Hospital Galway</name>
+        <company_id>42</company_id>
+        <lat>53.2768</lat>
+        <lng>-9.06647</lng>
+        <zoom>14</zoom>
+        <is_pop>false</is_pop>
+        <active>false</active>
+      </site>
+      <site id="170">
+        <parent_type>Client</parent_type>
+        <id>170</id>
+        <abbreviation>MARTINRYAN</abbreviation>
+        <name>Martin Ryan Institute</name>
+        <company_id>42</company_id>
+        <lat>53.3259</lat>
+        <lng>-9.83791</lng>
+        <zoom>14</zoom>
+        <is_pop>false</is_pop>
+        <active>true</active>
+      </site>
+      <site id="173">
+        <parent_type>Client</parent_type>
+        <id>173</id>
+        <abbreviation>ASNG</abbreviation>
+        <name>Áras Shorcha Ní Ghuairim</name>
+        <company_id>42</company_id>
+        <lat>53.3257</lat>
+        <lng>-9.83834</lng>
+        <zoom>14</zoom>
+        <is_pop>false</is_pop>
+        <active>true</active>
+      </site>
+      <site id="176">
+        <parent_type>Client</parent_type>
+        <id>176</id>
+        <abbreviation>GWEEDORE</abbreviation>
+        <name>Gweedore (NUIG)</name>
+        <company_id>42</company_id>
+        <lat>55.0514</lat>
+        <lng>-8.23185</lng>
+        <zoom>14</zoom>
+        <is_pop>false</is_pop>
+        <active>true</active>
+      </site>
+      <site id="179">
+        <parent_type>Client</parent_type>
+        <id>179</id>
+        <abbreviation>MHARS</abbreviation>
+        <name>Mace Head Atmospheric Research Station</name>
+        <company_id>42</company_id>
+        <lat>53.325</lat>
+        <lng>-9.89894</lng>
+        <zoom>14</zoom>
+        <is_pop>false</is_pop>
+        <active>true</active>
+      </site>
+      <site id="182">
+        <parent_type>Client</parent_type>
+        <id>182</id>
+        <abbreviation>KILKENNY</abbreviation>
+        <name>NUIM Kilkenny Centre</name>
+        <company_id>43</company_id>
+        <lat>52.6468</lat>
+        <lng>-7.25566</lng>
+        <zoom>16</zoom>
+        <is_pop>false</is_pop>
+        <active>true</active>
+      </site>
+      <site id="185">
+        <parent_type>Client</parent_type>
+        <id>185</id>
+        <abbreviation>AMNCH</abbreviation>
+        <name>Tallaght Hospital</name>
+        <company_id>1</company_id>
+        <lat>53.2925</lat>
+        <lng>-6.38128</lng>
+        <zoom>14</zoom>
+        <is_pop>false</is_pop>
+        <active>true</active>
+      </site>
+      <site id="188">
+        <parent_type>Client</parent_type>
+        <id>188</id>
+        <abbreviation>RVEEH</abbreviation>
+        <name>Royal Victoria Eye and Ear Hospital</name>
+        <company_id>13</company_id>
+        <lat>53.333</lat>
+        <lng>-6.25939</lng>
+        <zoom>14</zoom>
+        <is_pop>false</is_pop>
+        <active>true</active>
+      </site>
+      <site id="191">
+        <parent_type>Client</parent_type>
+        <id>191</id>
+        <abbreviation>OLHSC</abbreviation>
+        <name>Our Lady's Hospital for Sick Children</name>
+        <company_id>13</company_id>
+        <lat>53.326</lat>
+        <lng>-6.31892</lng>
+        <zoom>16</zoom>
+        <is_pop>false</is_pop>
+        <active>true</active>
+      </site>
+      <site id="194">
+        <parent_type>Client</parent_type>
+        <id>194</id>
+        <abbreviation>FOSTER</abbreviation>
+        <name>TCD Foster Place</name>
+        <company_id>1</company_id>
+        <lat>53.3445</lat>
+        <lng>-6.26145</lng>
+        <zoom>14</zoom>
+        <is_pop>false</is_pop>
+        <active>true</active>
+      </site>
+      <site id="197">
+        <parent_type>Client</parent_type>
+        <id>197</id>
+        <abbreviation>DOLIER</abbreviation>
+        <name>TCD D'Olier Street</name>
+        <company_id>1</company_id>
+        <lat>53.3465</lat>
+        <lng>-6.25788</lng>
+        <zoom>14</zoom>
+        <is_pop>false</is_pop>
+        <active>true</active>
+      </site>
+      <site id="200">
+        <parent_type>Client</parent_type>
+        <id>200</id>
+        <abbreviation>SVUH</abbreviation>
+        <name>St Vincent's University Hospital</name>
+        <company_id>13</company_id>
+        <lat>53.3167</lat>
+        <lng>-6.21292</lng>
+        <zoom>14</zoom>
+        <is_pop>false</is_pop>
+        <active>true</active>
+      </site>
+      <site id="203">
+        <parent_type>Client</parent_type>
+        <id>203</id>
+        <abbreviation>ECCLES</abbreviation>
+        <name>The Mater</name>
+        <company_id>13</company_id>
+        <lat>53.3593</lat>
+        <lng>-6.26736</lng>
+        <zoom>14</zoom>
+        <is_pop>false</is_pop>
+        <active>true</active>
+      </site>
+      <site id="206">
+        <parent_type>Client</parent_type>
+        <id>206</id>
+        <abbreviation>CARYSFORT</abbreviation>
+        <name>UCD Carysfort</name>
+        <company_id>13</company_id>
+        <lat>53.2958</lat>
+        <lng>-6.18284</lng>
+        <zoom>14</zoom>
+        <is_pop>false</is_pop>
+        <active>true</active>
+      </site>
+      <site id="209">
+        <parent_type>Client</parent_type>
+        <id>209</id>
+        <abbreviation>LYONS</abbreviation>
+        <name>Lyons Estate Farm</name>
+        <company_id>13</company_id>
+        <lat>53.3006</lat>
+        <lng>-6.54854</lng>
+        <zoom>14</zoom>
+        <is_pop>false</is_pop>
+        <active>true</active>
+      </site>
+      <site id="212">
+        <parent_type>Client</parent_type>
+        <id>212</id>
+        <abbreviation>TONY-RYAN</abbreviation>
+        <name>Tony Ryan Academy</name>
+        <company_id>17</company_id>
+        <lat>53.29</lat>
+        <lng>-6.42247</lng>
+        <zoom>14</zoom>
+        <is_pop>false</is_pop>
+        <active>true</active>
+      </site>
+      <site id="215">
+        <parent_type>Client</parent_type>
+        <id>215</id>
+        <abbreviation>TCD-ENT</abbreviation>
+        <name>TCD Enterprise Centre</name>
+        <company_id>1</company_id>
+        <lat>53.3419</lat>
+        <lng>-6.2402</lng>
+        <zoom>14</zoom>
+        <is_pop>false</is_pop>
+        <active>true</active>
+      </site>
+      <site id="218">
+        <parent_type>Client</parent_type>
+        <id>218</id>
+        <abbreviation>CARRAROE</abbreviation>
+        <name>Áras Mháirtin Uí Chaidhin</name>
+        <company_id>42</company_id>
+        <lat>53.2657</lat>
+        <lng>-9.59664</lng>
+        <zoom>14</zoom>
+        <is_pop>false</is_pop>
+        <active>true</active>
+      </site>
+      <site id="221">
+        <parent_type>Client</parent_type>
+        <id>221</id>
+        <abbreviation>SEAN</abbreviation>
+        <name>Sean Scoil Shailearna</name>
+        <company_id>42</company_id>
+        <lat>53.246</lat>
+        <lng>-9.36439</lng>
+        <zoom>14</zoom>
+        <is_pop>false</is_pop>
+        <active>true</active>
+      </site>
+      <site id="224">
+        <parent_type>Client</parent_type>
+        <id>224</id>
+        <abbreviation>CARRON</abbreviation>
+        <name>Carron Field Station</name>
+        <company_id>42</company_id>
+        <lat>53.0359</lat>
+        <lng>-9.07668</lng>
+        <zoom>14</zoom>
+        <is_pop>false</is_pop>
+        <active>true</active>
+      </site>
+      <site id="230">
+        <parent_type>Client</parent_type>
+        <id>230</id>
+        <abbreviation>TCD-SPH</abbreviation>
+        <name>St Patrick's Hospital</name>
+        <company_id>1</company_id>
+        <lat>53.3442</lat>
+        <lng>-6.29229</lng>
+        <zoom>14</zoom>
+        <is_pop>false</is_pop>
+        <active>false</active>
+      </site>
+      <site id="233">
+        <parent_type>Client</parent_type>
+        <id>233</id>
+        <abbreviation>TCD-SJH</abbreviation>
+        <name>St James's Hospital</name>
+        <company_id>1</company_id>
+        <lat>53.3416</lat>
+        <lng>-6.29448</lng>
+        <zoom>14</zoom>
+        <is_pop>false</is_pop>
+        <active>true</active>
+      </site>
+      <site id="236">
+        <parent_type>Client</parent_type>
+        <id>236</id>
+        <abbreviation>HEANET-SC</abbreviation>
+        <name>HEAnet Schools</name>
+        <company_id>55</company_id>
+        <lat>53.3496</lat>
+        <lng>-6.24659</lng>
+        <zoom>14</zoom>
+        <is_pop>false</is_pop>
+        <active>true</active>
+      </site>
+      <site id="239">
+        <parent_type>Client</parent_type>
+        <id>239</id>
+        <abbreviation>AUNGIER</abbreviation>
+        <name>DIT Aungier Street</name>
+        <company_id>21</company_id>
+        <lat>53.3385</lat>
+        <lng>-6.26654</lng>
+        <zoom>14</zoom>
+        <is_pop>false</is_pop>
+        <active>true</active>
+      </site>
+      <site id="242">
+        <parent_type>Client</parent_type>
+        <id>242</id>
+        <abbreviation>CSC</abbreviation>
+        <name>Clinical Sciences NUIG</name>
+        <company_id>42</company_id>
+        <lat>53.2754</lat>
+        <lng>-9.06612</lng>
+        <zoom>14</zoom>
+        <is_pop>false</is_pop>
+        <active>true</active>
+      </site>
+      <site id="245">
+        <parent_type>Client</parent_type>
+        <id>245</id>
+        <abbreviation>CAR</abbreviation>
+        <name>WIT Carriganore Arclab</name>
+        <company_id>34</company_id>
+        <lat>52.2535</lat>
+        <lng>-7.18757</lng>
+        <zoom>17</zoom>
+        <is_pop>false</is_pop>
+        <active>true</active>
+      </site>
+      <site id="248">
+        <parent_type>Client</parent_type>
+        <id>248</id>
+        <abbreviation>FULBRIGHT</abbreviation>
+        <name>Fulbright Commission</name>
+        <company_id>248</company_id>
+        <lat>53.3103</lat>
+        <lng>-6.22159</lng>
+        <zoom>14</zoom>
+        <is_pop>false</is_pop>
+        <active>false</active>
+      </site>
+      <site id="251">
+        <parent_type>Client</parent_type>
+        <id>251</id>
+        <abbreviation>QUALIFAX</abbreviation>
+        <name>Qualifax</name>
+        <company_id>251</company_id>
+        <lat>52.7812</lat>
+        <lng>-6.90384</lng>
+        <zoom>14</zoom>
+        <is_pop>false</is_pop>
+        <active>false</active>
+      </site>
+      <site id="254">
+        <parent_type>Client</parent_type>
+        <id>254</id>
+        <abbreviation>HSE</abbreviation>
+        <name>Health Service Executive</name>
+        <company_id>254</company_id>
+        <lat>53.2366</lat>
+        <lng>-6.66672</lng>
+        <zoom>14</zoom>
+        <is_pop>false</is_pop>
+        <active>false</active>
+      </site>
+      <site id="257">
+        <parent_type>Client</parent_type>
+        <id>257</id>
+        <abbreviation>CONUL</abbreviation>
+        <name>Consortium of National and University Libraries</name>
+        <company_id>257</company_id>
+        <lat/>
+        <lng/>
+        <zoom>14</zoom>
+        <is_pop>false</is_pop>
+        <active>false</active>
+      </site>
+      <site id="258">
+        <parent_type>Client</parent_type>
+        <id>258</id>
+        <abbreviation>BH</abbreviation>
+        <name>Blanchardstown | DRT</name>
+        <company_id>55</company_id>
+        <lat>53.4122</lat>
+        <lng>-6.36969</lng>
+        <zoom>14</zoom>
+        <is_pop>true</is_pop>
+        <active>true</active>
+      </site>
+      <site id="259">
+        <parent_type>Client</parent_type>
+        <id>259</id>
+        <abbreviation>PW</abbreviation>
+        <name>Parkwest | Interxion</name>
+        <company_id>55</company_id>
+        <lat>53.3343</lat>
+        <lng>-6.3658</lng>
+        <zoom>14</zoom>
+        <is_pop>true</is_pop>
+        <active>true</active>
+      </site>
+      <site id="260">
+        <parent_type>Client</parent_type>
+        <id>260</id>
+        <abbreviation>CWT</abbreviation>
+        <name>Citywest | BT Applications Hosting</name>
+        <company_id>55</company_id>
+        <lat>53.2923</lat>
+        <lng>-6.41503</lng>
+        <zoom>14</zoom>
+        <is_pop>true</is_pop>
+        <active>true</active>
+      </site>
+      <site id="261">
+        <parent_type>Client</parent_type>
+        <id>261</id>
+        <abbreviation>KP</abbreviation>
+        <name>Telecity Kilcarbery</name>
+        <company_id>55</company_id>
+        <lat>53.3177</lat>
+        <lng>-6.4397</lng>
+        <zoom>14</zoom>
+        <is_pop>true</is_pop>
+        <active>true</active>
+      </site>
+      <site id="312">
+        <parent_type>Client</parent_type>
+        <id>312</id>
+        <abbreviation>FOO</abbreviation>
+        <name>Test Site</name>
+        <company_id>15</company_id>
+        <lat/>
+        <lng/>
+        <zoom>14</zoom>
+        <is_pop>true</is_pop>
+        <active>false</active>
+      </site>
+      <site id="316">
+        <parent_type>Client</parent_type>
+        <id>316</id>
+        <abbreviation>TCD</abbreviation>
+        <name>TCD PoP</name>
+        <company_id>55</company_id>
+        <lat>53.3436</lat>
+        <lng>-6.25528</lng>
+        <zoom>14</zoom>
+        <is_pop>true</is_pop>
+        <active>true</active>
+      </site>
+      <site id="317">
+        <parent_type>Client</parent_type>
+        <id>317</id>
+        <abbreviation>DCU</abbreviation>
+        <name>DCU PoP</name>
+        <company_id>55</company_id>
+        <lat>53.3842</lat>
+        <lng>-6.25455</lng>
+        <zoom>14</zoom>
+        <is_pop>true</is_pop>
+        <active>true</active>
+      </site>
+      <site id="318">
+        <parent_type>Client</parent_type>
+        <id>318</id>
+        <abbreviation>DUN1</abbreviation>
+        <name>DKIT PoP1</name>
+        <company_id>55</company_id>
+        <lat>53.9849</lat>
+        <lng>-6.39314</lng>
+        <zoom>14</zoom>
+        <is_pop>true</is_pop>
+        <active>true</active>
+      </site>
+      <site id="319">
+        <parent_type>Client</parent_type>
+        <id>319</id>
+        <abbreviation>GAL1</abbreviation>
+        <name>NUIG PoP1</name>
+        <company_id>55</company_id>
+        <lat>53.28</lat>
+        <lng>-9.05889</lng>
+        <zoom>14</zoom>
+        <is_pop>true</is_pop>
+        <active>true</active>
+      </site>
+      <site id="320">
+        <parent_type>Client</parent_type>
+        <id>320</id>
+        <abbreviation>LIM1</abbreviation>
+        <name>UL PoP1</name>
+        <company_id>55</company_id>
+        <lat>52.6739</lat>
+        <lng>-8.57152</lng>
+        <zoom>14</zoom>
+        <is_pop>true</is_pop>
+        <active>true</active>
+      </site>
+      <site id="321">
+        <parent_type>Client</parent_type>
+        <id>321</id>
+        <abbreviation>CORK</abbreviation>
+        <name>UCC PoP1</name>
+        <company_id>55</company_id>
+        <lat>51.8924</lat>
+        <lng>-8.49342</lng>
+        <zoom>14</zoom>
+        <is_pop>true</is_pop>
+        <active>true</active>
+      </site>
+      <site id="322">
+        <parent_type>Client</parent_type>
+        <id>322</id>
+        <abbreviation>WIT</abbreviation>
+        <name>WIT PoP1</name>
+        <company_id>55</company_id>
+        <lat>52.2419</lat>
+        <lng>-7.15776</lng>
+        <zoom>14</zoom>
+        <is_pop>true</is_pop>
+        <active>true</active>
+      </site>
+      <site id="323">
+        <parent_type>Client</parent_type>
+        <id>323</id>
+        <abbreviation>testlab</abbreviation>
+        <name>HEAnet Test Lab</name>
+        <company_id>55</company_id>
+        <lat>53.3496</lat>
+        <lng>-6.24659</lng>
+        <zoom>14</zoom>
+        <is_pop>false</is_pop>
+        <active>true</active>
+      </site>
+      <site id="324">
+        <parent_type>Client</parent_type>
+        <id>324</id>
+        <abbreviation>FETAC</abbreviation>
+        <name>FETAC East Point</name>
+        <company_id>263</company_id>
+        <lat>53.3574</lat>
+        <lng>-6.22337</lng>
+        <zoom>14</zoom>
+        <is_pop>false</is_pop>
+        <active>true</active>
+      </site>
+      <site id="325">
+        <parent_type>Client</parent_type>
+        <id>325</id>
+        <abbreviation>SJC</abbreviation>
+        <name>St John's College</name>
+        <company_id>494</company_id>
+        <lat>51.894</lat>
+        <lng>-8.46774</lng>
+        <zoom>14</zoom>
+        <is_pop>false</is_pop>
+        <active>true</active>
+      </site>
+      <site id="326">
+        <parent_type>Client</parent_type>
+        <id>326</id>
+        <abbreviation>CAVANVEC</abbreviation>
+        <name>Cavan VEC</name>
+        <company_id>501</company_id>
+        <lat>53.9935</lat>
+        <lng>-7.3585</lng>
+        <zoom>14</zoom>
+        <is_pop>false</is_pop>
+        <active>true</active>
+      </site>
+      <site id="327">
+        <parent_type>Client</parent_type>
+        <id>327</id>
+        <abbreviation>MEATHVEC</abbreviation>
+        <name>Meath VEC</name>
+        <company_id>502</company_id>
+        <lat>53.6549</lat>
+        <lng>-6.69003</lng>
+        <zoom>16</zoom>
+        <is_pop>false</is_pop>
+        <active>true</active>
+      </site>
+      <site id="329">
+        <parent_type>Client</parent_type>
+        <id>329</id>
+        <abbreviation>hermes</abbreviation>
+        <name>NCTE campus</name>
+        <company_id>45</company_id>
+        <lat>53.3854</lat>
+        <lng>-6.2526</lng>
+        <zoom>14</zoom>
+        <is_pop>false</is_pop>
+        <active>false</active>
+      </site>
+      <site id="330">
+        <parent_type>Client</parent_type>
+        <id>330</id>
+        <abbreviation>ICHECHQ</abbreviation>
+        <name>ICHEC HPC Hub</name>
+        <company_id>57</company_id>
+        <lat>53.3419</lat>
+        <lng>-6.23933</lng>
+        <zoom>15</zoom>
+        <is_pop>false</is_pop>
+        <active>true</active>
+      </site>
+      <site id="331">
+        <parent_type>Client</parent_type>
+        <id>331</id>
+        <abbreviation>georgesquay</abbreviation>
+        <name>Georges Quay</name>
+        <company_id>46</company_id>
+        <lat>52.667</lat>
+        <lng>-8.62215</lng>
+        <zoom>16</zoom>
+        <is_pop>false</is_pop>
+        <active>true</active>
+      </site>
+      <site id="332">
+        <parent_type>Client</parent_type>
+        <id>332</id>
+        <abbreviation>ISE-QUB</abbreviation>
+        <name>Irish School of Ecumenics</name>
+        <company_id>1</company_id>
+        <lat>54.6365</lat>
+        <lng>-5.93657</lng>
+        <zoom>14</zoom>
+        <is_pop>false</is_pop>
+        <active>true</active>
+      </site>
+      <site id="373">
+        <parent_type>Client</parent_type>
+        <id>373</id>
+        <abbreviation>oconnell</abbreviation>
+        <name>LIT O'Connell Street</name>
+        <company_id>46</company_id>
+        <lat>52.6622</lat>
+        <lng>-8.62846</lng>
+        <zoom>14</zoom>
+        <is_pop>false</is_pop>
+        <active>true</active>
+      </site>
+      <site id="374">
+        <parent_type>Client</parent_type>
+        <id>374</id>
+        <abbreviation>AN-CHEIM-SANTRY</abbreviation>
+        <name>An Cheim Santry</name>
+        <company_id>49</company_id>
+        <lat>53.4052</lat>
+        <lng>-6.23543</lng>
+        <zoom>14</zoom>
+        <is_pop>false</is_pop>
+        <active>true</active>
+      </site>
+      <site id="375">
+        <parent_type>Client</parent_type>
+        <id>375</id>
+        <abbreviation>AN-CHEIM</abbreviation>
+        <name>An Cheim Citywest</name>
+        <company_id>49</company_id>
+        <lat>53.2905</lat>
+        <lng>-6.4217</lng>
+        <zoom>14</zoom>
+        <is_pop>false</is_pop>
+        <active>true</active>
+      </site>
+      <site id="376">
+        <parent_type>Client</parent_type>
+        <id>376</id>
+        <abbreviation>NEWHSE</abbreviation>
+        <name>UCD Newman House</name>
+        <company_id>13</company_id>
+        <lat>53.3394</lat>
+        <lng>-6.2578</lng>
+        <zoom>17</zoom>
+        <is_pop>false</is_pop>
+        <active>true</active>
+      </site>
+      <site id="378">
+        <parent_type>Client</parent_type>
+        <id>378</id>
+        <abbreviation>OIR</abbreviation>
+        <name>Office of the Houses of the Oireachtas</name>
+        <company_id>690</company_id>
+        <lat>53.3406</lat>
+        <lng>-6.254</lng>
+        <zoom>14</zoom>
+        <is_pop>false</is_pop>
+        <active>true</active>
+      </site>
+      <site id="381">
+        <parent_type>Client</parent_type>
+        <id>381</id>
+        <abbreviation>WIT-TL</abbreviation>
+        <name>WIT Tourism &amp; Leisure</name>
+        <company_id>34</company_id>
+        <lat>52.245</lat>
+        <lng>-7.13857</lng>
+        <zoom>14</zoom>
+        <is_pop>true</is_pop>
+        <active>true</active>
+      </site>
+      <site id="386">
+        <parent_type>Client</parent_type>
+        <id>386</id>
+        <abbreviation>CorkVEC</abbreviation>
+        <name>CorkVEC Admin Office</name>
+        <company_id>565</company_id>
+        <lat>51.9005</lat>
+        <lng>-8.47439</lng>
+        <zoom>18</zoom>
+        <is_pop>false</is_pop>
+        <active>true</active>
+      </site>
+      <site id="387">
+        <parent_type>Client</parent_type>
+        <id>387</id>
+        <abbreviation>LIMERICKVEC</abbreviation>
+        <name>City of Limerick VEC</name>
+        <company_id>563</company_id>
+        <lat>52.6612</lat>
+        <lng>-8.62681</lng>
+        <zoom>14</zoom>
+        <is_pop>false</is_pop>
+        <active>true</active>
+      </site>
+      <site id="388">
+        <parent_type>Client</parent_type>
+        <id>388</id>
+        <abbreviation>ETBI</abbreviation>
+        <name>Educational Training Boards Ireland</name>
+        <company_id>593</company_id>
+        <lat>53.1949</lat>
+        <lng>-6.67196</lng>
+        <zoom>14</zoom>
+        <is_pop>false</is_pop>
+        <active>true</active>
+      </site>
+      <site id="389">
+        <parent_type>Client</parent_type>
+        <id>389</id>
+        <abbreviation>OffalyVEC</abbreviation>
+        <name>Offaly VEC Admin Office</name>
+        <company_id>602</company_id>
+        <lat>53.2726</lat>
+        <lng>-7.49651</lng>
+        <zoom>14</zoom>
+        <is_pop>false</is_pop>
+        <active>true</active>
+      </site>
+      <site id="390">
+        <parent_type>Client</parent_type>
+        <id>390</id>
+        <abbreviation>kildarevec</abbreviation>
+        <name>Kildare VEC</name>
+        <company_id>610</company_id>
+        <lat>53.2145</lat>
+        <lng>-6.67259</lng>
+        <zoom>14</zoom>
+        <is_pop>false</is_pop>
+        <active>true</active>
+      </site>
+      <site id="391">
+        <parent_type>Client</parent_type>
+        <id>391</id>
+        <abbreviation>WIT GB</abbreviation>
+        <name>WIT Granary Building</name>
+        <company_id>34</company_id>
+        <lat>52.2625</lat>
+        <lng>-7.11508</lng>
+        <zoom>14</zoom>
+        <is_pop>false</is_pop>
+        <active>true</active>
+      </site>
+      <site id="392">
+        <parent_type>Client</parent_type>
+        <id>392</id>
+        <abbreviation>Hermes</abbreviation>
+        <name>Hermes (NCTE)</name>
+        <company_id>45</company_id>
+        <lat/>
+        <lng/>
+        <zoom>14</zoom>
+        <is_pop>false</is_pop>
+        <active>false</active>
+      </site>
+      <site id="393">
+        <parent_type>Client</parent_type>
+        <id>393</id>
+        <abbreviation>NCTE</abbreviation>
+        <name>NCTE Office</name>
+        <company_id>604</company_id>
+        <lat/>
+        <lng/>
+        <zoom>14</zoom>
+        <is_pop>false</is_pop>
+        <active>true</active>
+      </site>
+      <site id="394">
+        <parent_type>Client</parent_type>
+        <id>394</id>
+        <abbreviation>SPT</abbreviation>
+        <name>St. Patricks College, Thurles</name>
+        <company_id>609</company_id>
+        <lat>52.6788</lat>
+        <lng>-7.80814</lng>
+        <zoom>14</zoom>
+        <is_pop>false</is_pop>
+        <active>true</active>
+      </site>
+      <site id="395">
+        <parent_type>Client</parent_type>
+        <id>395</id>
+        <abbreviation>CAR-R2</abbreviation>
+        <name>WIT Carriganore R2</name>
+        <company_id>34</company_id>
+        <lat>52.2539</lat>
+        <lng>-7.18886</lng>
+        <zoom>17</zoom>
+        <is_pop>false</is_pop>
+        <active>true</active>
+      </site>
+      <site id="396">
+        <parent_type>Client</parent_type>
+        <id>396</id>
+        <abbreviation>WIT-ST-CIARAN</abbreviation>
+        <name>WIT Kilkenny Campus</name>
+        <company_id>34</company_id>
+        <lat>52.6465</lat>
+        <lng>-7.25741</lng>
+        <zoom>14</zoom>
+        <is_pop>false</is_pop>
+        <active>true</active>
+      </site>
+      <site id="397">
+        <parent_type>Client</parent_type>
+        <id>397</id>
+        <abbreviation>SMB</abbreviation>
+        <name>Smartbay Spiddal</name>
+        <company_id>636</company_id>
+        <lat>53.2463</lat>
+        <lng>-9.28291</lng>
+        <zoom>14</zoom>
+        <is_pop>false</is_pop>
+        <active>true</active>
+      </site>
+      <site id="398">
+        <parent_type>Client</parent_type>
+        <id>398</id>
+        <abbreviation>DCFE</abbreviation>
+        <name>Dun Laoghaire College of Further Education</name>
+        <company_id>624</company_id>
+        <lat>53.2949</lat>
+        <lng>-6.1447</lng>
+        <zoom>14</zoom>
+        <is_pop>false</is_pop>
+        <active>true</active>
+      </site>
+      <site id="399">
+        <parent_type>Client</parent_type>
+        <id>399</id>
+        <abbreviation>eblana</abbreviation>
+        <name>Senior College Dun Laoghaire</name>
+        <company_id>624</company_id>
+        <lat>53.2935</lat>
+        <lng>-6.13593</lng>
+        <zoom>14</zoom>
+        <is_pop>false</is_pop>
+        <active>true</active>
+      </site>
+      <site id="400">
+        <parent_type>Client</parent_type>
+        <id>400</id>
+        <abbreviation>COCORKVEC</abbreviation>
+        <name>Co. Cork VEC</name>
+        <company_id>635</company_id>
+        <lat>51.8887</lat>
+        <lng>-8.58713</lng>
+        <zoom>14</zoom>
+        <is_pop>false</is_pop>
+        <active>true</active>
+      </site>
+      <site id="401">
+        <parent_type>Client</parent_type>
+        <id>401</id>
+        <abbreviation>carna</abbreviation>
+        <name>Carna Convent</name>
+        <company_id>42</company_id>
+        <lat>53.3243</lat>
+        <lng>-9.83615</lng>
+        <zoom>14</zoom>
+        <is_pop>false</is_pop>
+        <active>true</active>
+      </site>
+      <site id="402">
+        <parent_type>Client</parent_type>
+        <id>402</id>
+        <abbreviation>QQI</abbreviation>
+        <name>Quality and Qualifications Ireland - IT</name>
+        <company_id>647</company_id>
+        <lat>53.3394</lat>
+        <lng>-6.24584</lng>
+        <zoom>14</zoom>
+        <is_pop>false</is_pop>
+        <active>true</active>
+      </site>
+      <site id="403">
+        <parent_type>Client</parent_type>
+        <id>403</id>
+        <abbreviation>DCU-GLASNEVIN</abbreviation>
+        <name>DCU Innovation Campus</name>
+        <company_id>17</company_id>
+        <lat>53.3776</lat>
+        <lng>-6.27007</lng>
+        <zoom>14</zoom>
+        <is_pop>false</is_pop>
+        <active>true</active>
+      </site>
+      <site id="404">
+        <parent_type>Client</parent_type>
+        <id>404</id>
+        <abbreviation>CIMRU</abbreviation>
+        <name>Computer Integrated Manufacturing Research Unit</name>
+        <company_id>42</company_id>
+        <lat/>
+        <lng/>
+        <zoom>14</zoom>
+        <is_pop>false</is_pop>
+        <active>true</active>
+      </site>
+      <site id="406">
+        <parent_type>Client</parent_type>
+        <id>406</id>
+        <abbreviation>DUN2</abbreviation>
+        <name>DKIT PoP2</name>
+        <company_id>22</company_id>
+        <lat/>
+        <lng/>
+        <zoom>14</zoom>
+        <is_pop>true</is_pop>
+        <active>true</active>
+      </site>
+      <site id="407">
+        <parent_type>Client</parent_type>
+        <id>407</id>
+        <abbreviation>UCC2</abbreviation>
+        <name>UCC PoP2</name>
+        <company_id>55</company_id>
+        <lat/>
+        <lng/>
+        <zoom>14</zoom>
+        <is_pop>true</is_pop>
+        <active>true</active>
+      </site>
+      <site id="408">
+        <parent_type>Client</parent_type>
+        <id>408</id>
+        <abbreviation>ITS1</abbreviation>
+        <name>ITS PoP1</name>
+        <company_id>55</company_id>
+        <lat/>
+        <lng/>
+        <zoom>14</zoom>
+        <is_pop>true</is_pop>
+        <active>true</active>
+      </site>
+      <site id="409">
+        <parent_type>Client</parent_type>
+        <id>409</id>
+        <abbreviation>ITS2</abbreviation>
+        <name>ITS PoP2</name>
+        <company_id>55</company_id>
+        <lat/>
+        <lng/>
+        <zoom>14</zoom>
+        <is_pop>true</is_pop>
+        <active>true</active>
+      </site>
+      <site id="410">
+        <parent_type>Client</parent_type>
+        <id>410</id>
+        <abbreviation>UL2</abbreviation>
+        <name>UL PoP2</name>
+        <company_id>55</company_id>
+        <lat/>
+        <lng/>
+        <zoom>14</zoom>
+        <is_pop>true</is_pop>
+        <active>true</active>
+      </site>
+      <site id="411">
+        <parent_type>Client</parent_type>
+        <id>411</id>
+        <abbreviation>WIT2</abbreviation>
+        <name>WIT PoP2</name>
+        <company_id>55</company_id>
+        <lat/>
+        <lng/>
+        <zoom>14</zoom>
+        <is_pop>false</is_pop>
+        <active>true</active>
+      </site>
+    </list_of_sites>
+  </body>
+</clientdb>

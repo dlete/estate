@@ -65,3 +65,21 @@ class Budget(models.Model):
         # 'project' object has no attribute '__getitem__'
         # have to specify to return self.project.abbreviation
         return self.abbreviation
+
+ 
+class Site(models.Model):
+    parent_type = models.CharField(max_length=200, null=True)
+    abbreviation = models.CharField(max_length=200, null=True)
+    name = models.CharField(max_length=200, null=True)
+# Company table is not defined yet
+#    company = models.ForeignKey('Company')
+# clientdb names lat and lng
+# latitude (-90 to +90) with space for 5 decimals, (-90.00000 to 90.00000) 
+    latitude = models.DecimalField(max_digits=7, decimal_places=5)
+# longitude  (-180.00000 to 180.00000)
+    longitude = models.DecimalField(max_digits=8, decimal_places=5)
+# clientdb has the field "zoom", not imported here
+#    zoom = models.PositiveSmallIntegerField(null=True)
+# could be just Boolean, but we do not know if clientdb will enforce
+    is_pop = models.NullBooleanField()
+    active = models.NullBooleanField()
