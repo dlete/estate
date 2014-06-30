@@ -75,11 +75,14 @@ class Site(models.Model):
 #    company = models.ForeignKey('Company')
 # clientdb names lat and lng
 # latitude (-90 to +90) with space for 5 decimals, (-90.00000 to 90.00000) 
-    latitude = models.DecimalField(max_digits=7, decimal_places=5)
+    latitude = models.DecimalField(max_digits=7, decimal_places=5, null=True)
 # longitude  (-180.00000 to 180.00000)
-    longitude = models.DecimalField(max_digits=8, decimal_places=5)
+    longitude = models.DecimalField(max_digits=8, decimal_places=5, null=True)
 # clientdb has the field "zoom", not imported here
 #    zoom = models.PositiveSmallIntegerField(null=True)
 # could be just Boolean, but we do not know if clientdb will enforce
     is_pop = models.NullBooleanField()
     active = models.NullBooleanField()
+
+    def __unicode__(self):
+        return self.abbreviation
