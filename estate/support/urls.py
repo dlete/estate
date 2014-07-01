@@ -11,4 +11,6 @@ urlpatterns = patterns('',
     url(r'^edit_one/(?P<part_id>\d+)/$', views.edit_one, name='edit_one'),
     url(r'^update_one/(?P<part_id>\d+)/$', views.update_one, name='update_one'),
     url(r'^update_many_part_supported/$', views.update_many_part_supported, name='update_many_part_supported'),
+    url(r'^search_form/$', views.search_form, name='search_form'),
+    url(r'^search_results/$', views.search_results, name='search_results'),
 )

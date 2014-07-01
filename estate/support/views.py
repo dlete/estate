@@ -6,6 +6,32 @@ from django.utils import timezone
 from django.http import HttpResponseRedirect, HttpResponse
 from django.core.urlresolvers import reverse
 from support.forms import EditPartSupportedForm
+
+def search_form(request):
+    context = {'bodymessage': "search_form in Support."}
+    return render(request, 'support/search_form.html', context)
+
+
+def search_results(request):
+    context = {'bodymessage': "search_results in Support."}
+    if request.method == 'GET':
+    # Now we update only the fields/attributes that do NOT have a null
+    # value in the form
+
+        if request.GET.get('q'):
+#            context['search_message'] = 'You searched for: %r' % request.GET['q']
+            q = request.GET['q']
+            context['q'] = q
+
+            parts = PartSupported.objects.filter(hostname__icontains=q)
+            context['parts'] = parts
+        else:
+            context['search_message'] = 'You submitted an empty form.'
+
+    return render(request, 'support/search_results.html', context)
+
+
+
 # to use the Python CSV library
 import csv
 from django.http import HttpResponse

@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <p>{{ bodymessage }}</p>
+
+        <form action="{% url 'support:search_results' %}" method="get">
+        {% csrf_token %}
+
+        <input type="text" name="q"><br>
+
+        <input type="submit" name="find_parts" value="Search parts!"><br>
+
+    </form>
+
+{% endblock content %}
