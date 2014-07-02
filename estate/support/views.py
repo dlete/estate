@@ -11,22 +11,32 @@ def search_form(request):
     context = {'bodymessage': "search_form in Support."}
     return render(request, 'support/search_form.html', context)
 
-
+# import Q is needed for searches
+# https://docs.djangoproject.com/en/dev/topics/db/queries/#complex-lookups-with-q-objects
+from django.db.models import Q
+import functools
+import operator
 def search_results(request):
     context = {'bodymessage': "search_results in Support."}
-    if request.method == 'GET':
+    if request.method == 'POST':
     # Now we update only the fields/attributes that do NOT have a null
     # value in the form
 
-        if request.GET.get('q'):
-#            context['search_message'] = 'You searched for: %r' % request.GET['q']
-            q = request.GET['q']
-            context['q'] = q
+        my_list = []
+        if request.POST.get('hostname'):
+            hostname = request.POST['hostname']
+            my_list.append(('hostname__icontains', hostname))
 
-            parts = PartSupported.objects.filter(hostname__icontains=q)
+# works
+#            parts = PartSupported.objects.filter(hostname__icontains=hostname)
+            parts = PartSupported.objects.filter(Q(hostname__icontains=hostname))
             context['parts'] = parts
-        else:
-            context['search_message'] = 'You submitted an empty form.'
+
+        q_list = [Q(x) for x in my_list]
+        parts = PartSupported.objects.filter(functools.reduce(operator.or_, q_list))
+        context['parts'] = parts
+#        else:
+#            context['search_message'] = 'You submitted an empty form.'
 
     return render(request, 'support/search_results.html', context)
 
