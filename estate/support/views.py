@@ -13,6 +13,8 @@ def search_form(request):
 
 # import Q is needed for searches
 # https://docs.djangoproject.com/en/dev/topics/db/queries/#complex-lookups-with-q-objects
+# recipe: http://www.michelepasin.org/blog/2010/07/20/the-power-of-djangos-q-objects/
+# http://julienphalip.com/post/2825034077/adding-search-to-a-django-site-in-a-snap
 from django.db.models import Q
 import functools
 import operator
